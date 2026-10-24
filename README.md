@@ -1,156 +1,151 @@
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md)
+
 # FirefoxNewTab
 
-一个用于本地临时加载的最小 Firefox 新标签页扩展，使用 Manifest V3 和原生 HTML、CSS、JavaScript，无需安装依赖或构建。
+A lightweight Firefox new tab extension with website shortcuts, groups, custom backgrounds, and an optional clock. Built with Manifest V3 and plain HTML, CSS, and JavaScript, it runs directly from the source files without dependencies or a build step.
 
-## 功能
+## Features
 
-- 网站图标网格、左侧分组切换栏与自定义背景，内置 7 张壁纸，网站列表由用户自行添加。
-- 时钟默认隐藏，可在设置中开启；开启后在右上角以较小字号显示本地时间及对应语言的日期，采用 24 小时制 `HH:mm:ss`，每秒刷新。
-- 添加、编辑和删除常用网站入口，支持上传本地图标或点击“获取图标”读取网站图标，点击入口后在当前标签页打开。
-- 网站图标支持正常、横图标、竖图标和大图标四种尺寸，切换时平滑变形并带动周围图标移动，每个网站分别保存尺寸。
-- 每个分组最多容纳 60 个基础格：桌面最多 10 列 × 6 行，移动端按宽度减少列数并向下排列；满额后禁用添加入口。
-- 网站支持在网格内拖拽并保留空位；拖动时显示落点、平滑移动周围项目，松手后保存位置，也可拖到左侧分类中。
-- 图标网格固定从侧栏右侧的左上方开始，支持自由拖放和保留空位，能完整显示时没有滚动条。
-- 更透明的分组切换栏支持新增、名称和图标设置、删除，并记住当前分组；展开、收起时平滑过渡，切换分组时内容上下滑动。
-- 点击右下角齿轮打开设置，可选择内置壁纸、本地背景图片、48 种常用背景色，或恢复默认背景。
-- 界面主题支持黑色、白色和跟随系统，自动保存选择。
-- 界面自动跟随 Firefox 显示语言，支持简体中文、繁体中文、英语、日语、西班牙语、韩语、法语、德语和葡萄牙语。
+- Arrange website shortcuts in a draggable grid with four icon sizes and saved empty spaces.
+- Organize websites in a collapsible group sidebar and drag shortcuts between groups.
+- Upload custom icons or fetch icons directly from a website when needed.
+- Choose from 7 bundled wallpapers, a local image, or 48 background colors.
+- Use a dark, light, or system theme and optionally display the local time and date.
+- Follow Firefox's interface language automatically and respect the system's reduced motion preference.
 
-## 文件
+## Load in Firefox
 
-```text
-FirefoxNewTab/
-├── manifest.json  # 新标签页配置
-├── newtab.html    # 时钟、日期、常用网站与背景设置界面
-├── newtab.css     # 页面样式
-├── wallpaper-picker.css  # 仅用于设置抽屉的两列壁纸卡片布局
-├── sidebar.css    # 左侧分组切换栏与响应式样式
-├── ui-effects.css # 悬停、点击和选中动效，兼容减少动态效果
-├── shortcut-board.css  # 自由网格与拖拽反馈
-├── newtab.js      # 时钟与日期刷新
-├── i18n.js        # 浏览器界面语言、文案插值与静态界面翻译
-├── _locales/     # 各语言的原生 WebExtension 消息目录
-├── icon-utils.js  # 网站与分组共用的图标校验、缩图与渲染
-├── sidebar.js     # 侧栏收缩偏好与同步缩放动画
-├── groups.js      # 网站分组、切换与本地保存
-├── shortcut-layout.js  # 不依赖页面的尺寸、容量与排列规则
-├── shortcut-tile-motion.js  # 图标尺寸变化与网格位置过渡
-├── shortcut-grid.js  # 页面度量与拖拽交互
-├── shortcut-icon-fetcher.js  # 按需获取网站图标并转为本地图片
-├── shortcut-page-transition.js  # 覆盖显示区域的分组切换动画
-├── shortcut-menu.js  # 网站三点菜单与右键菜单的统一交互
-├── shortcut-migrations.js  # 旧数据转换，不包含已移除功能的操作
-├── shortcuts.js   # 网站列表、编辑、容量守卫与本地保存
-├── background.js  # 背景选择与 IndexedDB 本地保存
-├── background-presets.js  # 按文件名排序的 7 张内置壁纸列表
-├── settings.js    # 右侧设置面板、主题与时钟显示偏好
-├── background-menu.js  # 背景空白处的右键菜单
-├── assets/        # 7 张内置 JPG 壁纸
-└── README.md     # 使用说明
-```
+Use Firefox 128 or later for on-demand icon fetching, which relies on [`optional_host_permissions`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/optional_host_permissions).
 
-## 在 Firefox 中临时加载
+1. Download or clone this repository and keep its files together.
+2. Open `about:debugging#/runtime/this-firefox` in Firefox.
+3. Click **Load Temporary Add-on…** and select `manifest.json` in the project root.
+4. If prompted, allow the extension to replace the new tab page.
+5. Open a new tab. Right-click an empty area to add your first website, or click the gear in the lower-right corner to open settings.
 
-1. 在 Firefox 地址栏打开 `about:debugging#/runtime/this-firefox`。
-2. 点击“临时载入附加组件…”（Load Temporary Add-on）。
-3. 选择本项目根目录中的 `manifest.json`。
-4. 如果 Firefox 提示允许扩展接管新标签页，选择允许。
-5. 打开一个新标签页，即可使用常用网站入口，并通过右下角齿轮调整设置。
+Temporary installation lasts until Firefox restarts; load the extension again afterward. See [Mozilla's temporary installation guide](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
 
-临时扩展会在 Firefox 重启后移除；下次使用时需要重新加载。参见 [Mozilla 临时加载说明](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)。
+## Website shortcuts
 
-修改源文件后，在上述调试页面找到本扩展，点击“重新载入”（Reload），关闭原有新标签页，再新建标签页。
+### Add and manage websites
 
-`newtab.html` 中的本地资源链接统一附加 `?v=20261024.10`，用于区分资源版本。后续修改 CSS 或 JavaScript 时，应同步更新这些版本参数。图库布局独立在 `wallpaper-picker.css` 中，并限定在设置抽屉内。
+The website list starts empty. Right-click an empty background area to open these actions:
 
-脚本按依赖顺序加载：共享图标和排列规则在使用它们的功能之前，分组、网格、菜单、切换动画和旧数据转换在网站控制器之前。各模块将内部状态封装在独立作用域中，仅通过明确的对象接口或事件协作；图片转换和网格容量规则各保留一份实现。侧栏与网格通过布局事件协调，跨模块提示统一交给网站控制器的一秒提示计时器处理。
+| Action | Result |
+| --- | --- |
+| Add Icon | Add a website to the current group. |
+| Change Wallpaper | Open settings at the bundled wallpaper section. |
+| Settings | Open the settings drawer. |
 
-## 界面语言
+Enter a name of up to 50 characters and an HTTP or HTTPS address. Addresses without a scheme automatically receive `https://`. Clicking a shortcut opens the website in the current tab.
 
-语言由 Firefox 的显示语言自动决定，无需单独选择。扩展使用原生 WebExtension 消息目录，并通过 `browser.i18n.getUILanguage()` 取得浏览器界面语言，不读取网页的首选语言列表。参见 [Mozilla 界面语言说明](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n/getUILanguage) 与 [扩展国际化说明](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization)。
+Right-click a shortcut or use its three-dot button to open, edit, resize, or delete it. The button appears on hover or keyboard focus and stays visible on touch devices. Deletion requires confirmation; canceling the editor discards unsaved changes.
 
-支持简体中文、繁体中文、英语、日语、西班牙语、韩语、法语、德语，以及巴西和葡萄牙两种葡萄牙语。地区语言使用对应或通用译文；未支持的语言回退到简体中文。修改 Firefox 显示语言后，重新打开新标签页即可应用浏览器当前的语言。
+### Icon sizes and grid capacity
 
-菜单、设置、对话框、确认提示、错误信息、辅助标签、颜色名称及扩展名称均已本地化，日期也按浏览器界面语言格式化。系统默认分组名称会随语言切换，用户自己填写的网站标题、网址和分组名称保持原文。时间继续使用本地时区和 24 小时制。
+Each group has a logical desktop grid of **10 columns × 6 rows**, totaling **60 base cells**.
 
-新增文案时在 `_locales/*/messages.json` 中使用相同的消息键，通过 `newTabI18n.t(key, { name, count })` 填入命名占位符；静态文字及属性使用 `data-i18n`、`data-i18n-title`、`data-i18n-aria-label` 或 `data-i18n-placeholder`。`i18n.js` 必须先于功能脚本加载，并同步处理网站模板中的菜单文字。地区兼容目录使用相同译文，更新相应语言时应一并同步。
+| Size | Columns × rows | Base cells |
+| --- | --- | --- |
+| Normal | 1 × 1 | 1 |
+| Wide Icon | 2 × 1 | 2 |
+| Tall Icon | 1 × 2 | 2 |
+| Large Icon | 2 × 2 | 4 |
 
-## 常用网站
+A group fits up to 60 normal shortcuts. Larger icons also need a suitable arrangement of free cells. Adding shortcuts is disabled when the group is full; adding, moving between groups, and resizing all check available space. Each website keeps its own size.
 
-首次打开时网站列表为空。在背景空白处右键选择“添加图标”，输入名称和网址即可添加入口。网格中的“添加图标”按钮已移除。网站在侧栏右侧的固定网格展示，图标在上、标题在下；点击入口会在当前标签页打开。
+Drag shortcuts to empty cells or over other shortcuts to rearrange them. Empty spaces and positions are saved. Press **Esc** or cancel a drag to restore the original layout; drag near the scroll area's edge to reach more cells.
 
-每个分组的逻辑网格为 10 列 × 6 行，共 60 个基础格。正常图标占 1 格，横图标和竖图标占 2 格，大图标占 4 格；最多容纳 60 个正常尺寸的网站。有空位时可通过背景右键添加，满额后“添加图标”变为禁用，腾出位置后恢复。保存新增网站、跨分类拖入和扩大尺寸时也会重新检查容量。
+The grid stays aligned to the upper-left of the area beside the sidebar and scrolls only when needed. Narrow windows use fewer columns and save separate positions for each column count. Dragging in a narrow layout does not overwrite desktop positions, and resizing the window alone does not save new positions. In a single-column view, wide icons temporarily shrink horizontally and regain their width when space allows.
 
-按住网站拖动，可放到网格边界内的空位，也可在已有项目处松手，其他项目会自动避让。拖动时有浮动预览、落点提示和周围项目的平滑移动；桌面的逻辑布局不会超出 10 列、6 行。位置以行列保存，重新打开仍保留布局。按 Esc 或取消拖动会恢复原布局。
+### Groups
 
-窄屏按可用宽度减少列数，初次排列后也可以拖到任意有效空格并保留空位。不同列数的窄屏布局分别记住位置，手机拖动不改写桌面位置；仅改变窗口大小也不会保存新位置。极窄的单列视图会暂时压缩横向跨度，宽屏时恢复原有图标尺寸。
+The sidebar starts with a **Favorites** group. Use **Add Group** to create more groups; names can contain up to 20 characters. Group settings let you change the name and use text, an emoji, or a local image as the icon.
 
-图标网格从侧栏右侧的左上方固定开始，列宽区域不随图标数量或落点变化，不再自动居中。桌面最多显示 10 列、6 行；小窗口和移动设备会按可用宽度减少列数。高度只保留实际用到的行，拖动时临时展开可放置范围，松开或取消后收回未使用的尾部空白。内容能完全显示时没有滚动条，图标落在下方超出可用高度时才需要滚动；拖到滚动区域边缘可继续查看其他格子。
+Drag a website onto a group to move it there, including onto its icon when the sidebar is collapsed. If the destination has insufficient space, the website stays in its original position.
 
-旧配置如果超出新容量，网站数据仍保留。网格只显示能容纳的项目，其余项目可通过“其余网站”文字列表打开、编辑或删除；腾出位置后会自动补位。
+Use the arrow at the top of the sidebar to collapse or expand it. The current group and collapsed state are saved. Any group can be renamed or deleted, including the initial group, but at least one group must remain. Deleting a group moves its websites and icons to the first remaining group.
 
-将网站拖到左侧某个分类上并松手，即可移入该分类；分组栏折叠时仍可拖到分类图标上归类。目标分类空间不足时取消移动，保留原位置。
+Group changes use vertical slide animations based on sidebar order. Resizing icons and changing the sidebar also animate smoothly. These effects respect the system's reduced motion setting.
 
-左侧半透明切换栏默认提供“常用”分组，已有网站归入此组。点击“添加分组”可创建自己的分组，名称最多 20 个字符；切换后只显示对应分组的网站，新入口添加到当前分组。每个分组右侧的设置按钮可编辑名称、文字或表情图标，也可上传最大 2 MiB 的本地图片作为图标。设置入口在悬停或聚焦时显示，触屏设备上始终显示。
+### Custom and fetched icons
 
-分组栏顶部的箭头按钮可收起或展开侧栏，宽度、文字和箭头随之平滑过渡，网站图标的大小与间距也同步缩放；响应式列数变化时平滑重排。收起后隐藏名称，只显示分组图标和添加按钮的加号；编辑按钮在悬停或聚焦时以角标显示。收起状态保存在本地，并同步到其他已打开的新标签页。侧栏和分组项使用更透明的背景，浅色与深色主题均保留选中提示。
+- Upload PNG, JPEG, WebP, GIF, AVIF, or ICO files up to **2 MiB** for website or group icons.
+- Without a custom website icon, the shortcut uses the first character of its name. **Use Default Icon** restores this fallback.
+- Icons keep their aspect ratio, are never enlarged, and are resized to a maximum longest edge of **512 px**. They are compressed to WebP at approximately **0.8** quality and reduced further if needed to fit the **128 KiB** stored icon data limit.
+- Previously saved PNG icons remain supported. To improve an older icon compressed to 128 px, upload the original image or fetch it again.
 
-所有分组都可编辑；有其他分组时也可删除最初的“常用”分组。删除分组会把网站移入首个剩余分组，保留网站及其图标；至少需要保留一个分组。
+To fetch an icon, enter a website address and click **Fetch Icon**. Firefox requests access to that website when needed. The extension reads the site's declared icons and also tries `/favicon.ico`, then converts the result into a local preview. Click **Save** to keep it. Failed or denied requests leave the existing icon intact, and local uploads remain available. No third-party icon service is used.
 
-点击分组时，动画按左侧分组顺序决定方向：切到下方分组时整体向上滑动，新分组从底端进入；切到上方分组时整体向下滑动，新分组从顶端进入。行程覆盖整个图标显示区的可见高度，移动设备上的长列表也按可见窗口过渡。连续快速切换以最后一次选择为准；系统开启“减少动态效果”时直接切换。
+## Appearance and backgrounds
 
-升级后会按旧预置标记清理原有默认网站，保留用户自己添加的网站和自定义图标。
+Click the lower-right gear to open the settings drawer. Close it with its close button, by clicking outside, or by pressing **Esc**.
 
-旧版文件夹功能已移除，原文件夹中的网站会移回所属分组的主网格，保留名称、网址、图标和尺寸。
+| Setting | Options and behavior |
+| --- | --- |
+| Theme | **Dark**, **Light**, or **Follow system**; the default follows the system. |
+| Show clock | Off by default. Displays local time in 24-hour `HH:mm:ss` format and a localized date, updated every second. |
+| Bundled wallpapers | 7 images, displayed in two columns; click a thumbnail to apply and save. |
+| Local background image | PNG, JPEG, WebP, GIF, or AVIF up to **10 MiB**; applied and saved after selection. |
+| Background colors | 48 colors; click a swatch to apply and save. |
+| Default background | White (`#ffffff`), used on first launch and when restoring the default. |
 
-右键点击网站图标，可在鼠标位置弹出菜单，顺序为“打开”“编辑”、分割线、“正常”“横图标”“竖图标”“大图标”、分割线、“删除”。当前尺寸会显示选中标记；靠近窗口边缘时会调整位置以避免溢出。删除需要确认。也可点击图标右上角的三点按钮打开同一菜单：鼠标指向或键盘聚焦入口时显示，触屏设备上始终显示。
+The theme changes controls, menus, and dialogs while preserving the chosen wallpaper or background color. Shortcut titles and the clock use dark text on bright solid backgrounds. Theme, clock visibility, and sidebar collapse preferences synchronize across open new tabs for the same extension.
 
-四种尺寸分别占用 1 列 × 1 行、2 列 × 1 行、1 列 × 2 行和 2 列 × 2 行；正常尺寸保持原有样式，标题始终在图标下方。切换尺寸时，图标大小和周围入口的位置平滑过渡；每个网站分别记住尺寸，编辑名称、网址或图片时继续保留。系统开启“减少动态效果”时直接切换。
+## Interface language
 
-窗口变化、侧栏折叠和时钟开关会调整显示比例、列数和可用空间，网格的逻辑容量及已保存的桌面位置不变。
+The interface follows Firefox's display language using [`browser.i18n.getUILanguage()`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n/getUILanguage). There is no separate language selector.
 
-右键点击背景空白处，会显示另一组操作：“添加图标”打开添加网站弹窗，“换壁纸”展开设置并定位内置壁纸选项，“设置”打开右侧设置抽屉。背景菜单与图标菜单互斥，点击菜单外或按 Esc 即可关闭。
+Supported interface languages are Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Spanish, French, German, and Portuguese, including Brazilian and European Portuguese. Regional locales use matching or generic translations; unsupported languages fall back to Simplified Chinese. Open a new tab after changing Firefox's display language.
 
-两组菜单弹出时都有短促的缩放与淡入动画；系统开启“减少动态效果”时关闭动画。
+Menus, settings, dialogs, messages, accessibility labels, color names, the extension name, dates, and the default group name are localized. User-entered website titles, URLs, and group names keep their original text. The clock always uses the local time zone.
 
-网站图标、壁纸卡片和色块提供轻量的悬停、按下与选中反馈；设置齿轮、时钟开关和编辑弹窗也有对应过渡。所有新增动效都遵循系统“减少动态效果”偏好。
+## Local data and permissions
 
-网站操作提示显示 1 秒后自动消失，连续操作时重新计时；表单内的错误说明保留显示。
+| Storage | Contents |
+| --- | --- |
+| `localStorage` | Websites, icons, grid positions, groups, current group, sidebar state, theme, and clock visibility. |
+| `IndexedDB` | Background choices and local background images. |
 
-添加或编辑网站时，可以上传自定义图标，支持 PNG、JPEG、WebP、GIF、AVIF 和 ICO，文件最大为 2 MiB。没有可用图标时使用名称首字，点击“使用默认图标”可重置；取消弹窗不会保存修改。
+Uploaded images stay in the browser. Managing shortcuts and backgrounds requires no additional permissions. Website access is requested only when you click **Fetch Icon**, and declining access does not prevent local uploads. Backgrounds do not use an external image service. If local storage is unavailable, management operations report an error.
 
-网站和分组图标统一按中等质量处理：最长边最多 512px，保留原图比例，不放大小尺寸原图；使用平滑缩放和质量约 0.8 的 WebP 压缩。图标数据仍限制在 128 KiB 内，超出时适度缩小尺寸，以兼顾清晰度和本地存储空间。
+### Compatibility with older data
 
-已保存的 PNG 图标继续兼容。旧版已经压缩到 128px 的图标无法还原丢失的细节，需要重新选择原图，或重新获取网站图标后保存，才会应用新的清晰度设置。
+- Old bundled shortcuts are removed using their preset markers; user-added websites and custom icons are retained.
+- The former folder feature has been removed. Websites inside old folders move into their group's main grid, retaining their names, URLs, icons, and sizes.
+- If older data exceeds grid capacity, excess websites remain in an **Other Websites** list where they can be opened, edited, or deleted. They return to the grid as space becomes available.
 
-填写网址后点击“获取图标”，会读取该网站声明的图标，并以网站根目录的 `favicon.ico` 作为兜底。获取的图片会转换为本地图标预览，点击“保存”后才生效；获取失败时保留当前图标，也可继续手动上传。不使用第三方图标服务，只有点击获取按钮才会访问网站。
+## Development
 
-获取图标会按需申请当前网站的访问权限；拒绝授权时可继续使用本地上传。可选网站权限使用 Firefox 128 及以上提供的 `optional_host_permissions`，只在用户点击按钮时申请。参见 [Mozilla 可选网站权限说明](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/optional_host_permissions) 与 [运行时授权说明](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/permissions/request)。
+### Project structure
 
-名称最多 50 个字符。网址仅支持 HTTP 和 HTTPS，省略协议时自动补上 `https://`；不支持 `javascript:`、`data:` 等地址。
+| Files | Purpose |
+| --- | --- |
+| `manifest.json` | Extension metadata, new tab override, and optional website permissions. |
+| `newtab.html`, `newtab.css`, `newtab.js` | Page structure, base styles, clock, and date. |
+| `i18n.js`, `_locales/` | Interface localization and WebExtension message catalogs. |
+| `shortcuts.js`, `groups.js`, `sidebar.js` | Website management, groups, and sidebar state. |
+| `shortcut-layout.js`, `shortcut-grid.js` | Grid capacity, placement rules, measurements, and dragging. |
+| `shortcut-tile-motion.js`, `shortcut-page-transition.js` | Icon resizing and group transition animations. |
+| `shortcut-menu.js`, `background-menu.js` | Shortcut and background context menus. |
+| `icon-utils.js`, `shortcut-icon-fetcher.js` | Shared icon processing and on-demand website icon fetching. |
+| `shortcut-migrations.js` | Compatibility with older saved website data. |
+| `background.js`, `background-presets.js`, `assets/` | Background storage, bundled wallpaper list, and images. |
+| `settings.js` | Settings drawer, theme, and clock preferences. |
+| `wallpaper-picker.css`, `sidebar.css`, `ui-effects.css`, `shortcut-board.css` | Wallpaper picker, sidebar, interaction effects, and grid styles. |
+| `README*.md`, `LICENSE` | Documentation in 8 languages and license text. |
 
-常用网站、分组、当前分组选择和侧栏折叠状态保存在当前扩展的 `localStorage` 中，本地管理不需要额外权限；获取网站图标单独按需请求访问权限。本地存储不可用时，管理操作会显示错误提示。
+### Edit and reload
 
-## 自定义背景
+No dependency installation or build command is required. After editing source files, click **Reload** for the extension in `about:debugging#/runtime/this-firefox`, close the old new tab page, and open a new one.
 
-点击右下角齿轮，设置抽屉会从窗口外右侧滑入，贴住窗口右边缘并占满窗口高度。抽屉中可以选择主题、开启时钟和自定义背景。点击关闭按钮、点击抽屉外或按 Esc 均可关闭，关闭时抽屉向右滑出。
+Local CSS and JavaScript references in `newtab.html` use a shared `?v=...` resource version. Update these parameters together when changing those resources. Keep script dependencies in order: load `i18n.js` first, shared utilities before their consumers, and group, grid, menu, transition, and migration modules before `shortcuts.js`. Modules keep private state in separate scopes and cooperate through explicit interfaces or events. Shared icon processing and capacity rules each have one implementation; wallpaper picker styles stay scoped to the settings drawer.
 
-抽屉标题栏固定在顶部，外观和背景分区在内容区内滚动。预设壁纸每行两张，按图片数量全部展开，列表本身不再滚动。缩略图显示在高 60px 的裁切框内，只有图片和选中勾选标记，没有名称、序号或悬停文字。
+### Update translations
 
-也可以在背景空白处右键选择“换壁纸”，直接展开设置并定位内置壁纸选项。点击缩略图即可更换；如需上传本地图片，点击“背景图片”选择文件。
+Use the same message keys across `_locales/*/messages.json`. Insert named values with `newTabI18n.t(key, { name, count })`; localize static content with `data-i18n`, `data-i18n-title`, `data-i18n-aria-label`, and `data-i18n-placeholder`. Include menu text inside templates, update equivalent regional locale catalogs together, and keep all 8 README versions aligned. See [Mozilla's internationalization guide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization).
 
-- 内置壁纸：提供 7 张壁纸，点击缩略图直接应用并保存。
-- 本地图片：选择文件后自动应用并保存，支持 PNG、JPEG、WebP、GIF 和 AVIF，文件最大为 10 MiB。
-- 纯色：提供 48 种常用颜色，包括中性色、暖色、冷色、浅色和深色；点击色块直接应用并保存，勾选标记表示当前颜色。
-- 默认背景：首次使用或点击“恢复默认”时，使用常用背景色的第一项“雪白”（`#ffffff`）。已保存的自定义背景继续保留。
+## License
 
-背景设置保存在当前扩展的 `IndexedDB` 中，与常用网站使用的 `localStorage` 分开保存。图片不会上传，也不使用外部图片服务；背景设置不需要额外权限。
-
-## 界面主题
-
-设置中的“主题”提供“黑色”“白色”“跟随系统”三个选项，默认为跟随系统。主题控制设置抽屉、右键菜单和编辑弹窗的配色，不覆盖已经选择的壁纸或背景颜色。选择跟随系统时，系统外观变化会同步更新界面。
-
-主题与时钟显示偏好保存在 `localStorage` 中，并同步到同一扩展已打开的其他新标签页。纯色背景较亮时，网站标题和时钟会自动改用深色文字。
-
-本次修改未运行或测试。
+See [LICENSE](LICENSE) for the GNU General Public License v3.0.
 

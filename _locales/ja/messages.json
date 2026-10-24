@@ -1,0 +1,698 @@
+{
+  "site_address_required": {
+    "message": "ウェブサイトのアドレスを入力してください。"
+  },
+  "site_address_invalid": {
+    "message": "有効なウェブサイトのアドレスを入力してください（例：https://example.com）。"
+  },
+  "site_address_http_only": {
+    "message": "ウェブサイトのアドレスは http:// または https:// のみ対応しています。"
+  },
+  "site_icon_fallback": {
+    "message": "サ"
+  },
+  "site_icon_fetch": {
+    "message": "アイコンを取得"
+  },
+  "site_migration_save_failed": {
+    "message": "ウェブサイトはこのページに保持されていますが、移行したデータを保存できませんでした。しばらくしてから再試行してください。"
+  },
+  "site_invalid_saved_entries": {
+    "message": "保存済みのウェブサイト情報の一部が無効なため、それらの項目を無視しました。"
+  },
+  "site_read_extension_failed": {
+    "message": "保存済みのウェブサイトを読み込めませんでした。拡張機能を再読み込みしてから再試行してください。"
+  },
+  "site_read_reload_failed": {
+    "message": "保存済みのウェブサイトを読み込めませんでした。ページを再読み込みしてから再試行してください。"
+  },
+  "site_arrange_failed": {
+    "message": "ウェブサイトを配置できませんでした。ページを再読み込みしてから再試行してください。"
+  },
+  "site_overflow_capacity": {
+    "message": "このグループにはグリッドに収まらないウェブサイトがあります。先にウェブサイトを削除するか、アイコンを小さくしてください。"
+  },
+  "site_capacity_full": {
+    "message": "このグループの基本セル60個はすべて使用中です。先にウェブサイトを削除するか、アイコンを小さくしてください。"
+  },
+  "site_grid_layout_failed": {
+    "message": "グリッドを配置できませんでした。ウェブサイトは保持されています。しばらくしてからページを再読み込みしてください。"
+  },
+  "site_grid_save_failed": {
+    "message": "グリッドの位置を保存できませんでした。しばらくしてから再試行してください。"
+  },
+  "site_read_retry_failed": {
+    "message": "保存済みのウェブサイトを読み込めませんでした。しばらくしてから再試行してください。"
+  },
+  "site_edit": {
+    "message": "ウェブサイトを編集"
+  },
+  "site_add": {
+    "message": "ウェブサイトを追加"
+  },
+  "site_delete_confirm": {
+    "message": "「{name}」へのショートカットを削除しますか？"
+  },
+  "site_delete_read_failed": {
+    "message": "保存済みのウェブサイトを読み込めませんでした。何も削除されていません。"
+  },
+  "site_delete_save_failed": {
+    "message": "変更を保存できませんでした。何も削除されていません。しばらくしてから再試行してください。"
+  },
+  "site_deleted": {
+    "message": "ウェブサイトのショートカットを削除しました。"
+  },
+  "site_resize_read_failed": {
+    "message": "保存済みのウェブサイトを読み込めませんでした。元のサイズを保持しています。"
+  },
+  "site_resize_no_space": {
+    "message": "このグループには十分な空きがないため、元のアイコンサイズを保持しています。先にウェブサイトを削除するか、アイコンを小さくしてください。"
+  },
+  "site_resize_failed": {
+    "message": "アイコンのサイズを変更できませんでした。元のサイズを保持しています。"
+  },
+  "site_resize_save_failed": {
+    "message": "アイコンのサイズを保存できませんでした。元のサイズを保持しています。しばらくしてから再試行してください。"
+  },
+  "site_overflow_count": {
+    "message": "その他のウェブサイト（{count}）"
+  },
+  "site_edit_action": {
+    "message": "編集"
+  },
+  "site_edit_named": {
+    "message": "{name}を編集"
+  },
+  "site_delete_action": {
+    "message": "削除"
+  },
+  "site_delete_named": {
+    "message": "{name}を削除"
+  },
+  "site_rearrange_save_failed": {
+    "message": "ウェブサイトは保持されていますが、変更後の配置を保存できませんでした。"
+  },
+  "site_grid_overflow_failed": {
+    "message": "グリッドを配置できませんでした。「その他のウェブサイト」で引き続きウェブサイトを管理できます。"
+  },
+  "site_icon_fetch_unavailable": {
+    "message": "アイコンの取得は現在利用できません。しばらくしてから再試行するか、画像をアップロードしてください。"
+  },
+  "site_icon_fetching": {
+    "message": "取得中…"
+  },
+  "site_icon_fetch_invalid": {
+    "message": "有効なウェブサイトのアイコンを取得できませんでした。画像のアップロードをお試しください。"
+  },
+  "site_icon_fetch_failed": {
+    "message": "ウェブサイトのアイコンを取得できませんでした。しばらくしてから再試行してください。"
+  },
+  "site_name_invalid": {
+    "message": "ウェブサイト名を1～50文字で入力してください。"
+  },
+  "site_deleted_elsewhere": {
+    "message": "このウェブサイトは削除されています。キャンセルしてから追加し直してください。"
+  },
+  "site_save_failed": {
+    "message": "ウェブサイトを保存できませんでした。しばらくしてから再試行してください。"
+  },
+  "site_saved": {
+    "message": "ウェブサイトの変更を保存しました。"
+  },
+  "site_added": {
+    "message": "ウェブサイトのショートカットを追加しました。"
+  },
+  "site_move_read_failed": {
+    "message": "保存済みのウェブサイトを読み込めませんでした。元の位置を保持しています。"
+  },
+  "site_move_failed": {
+    "message": "この項目を移動できませんでした。しばらくしてから再試行してください。"
+  },
+  "site_move_overflow": {
+    "message": "このウェブサイトはすでに「その他のウェブサイト」にあります。元の位置を保持しています。"
+  },
+  "site_move_group_full": {
+    "message": "移動先のグループに十分な空きがないため、ウェブサイトは元のグループに保持されています。"
+  },
+  "site_move_no_space": {
+    "message": "現在のアイコンはその位置に収まらないため、元の位置を保持しています。"
+  },
+  "site_move_save_failed": {
+    "message": "移動を保存できなかったため、元の位置に戻しました。"
+  },
+  "site_move_saved": {
+    "message": "新しい位置を保存しました。"
+  },
+  "site_named_group": {
+    "message": "「{name}」"
+  },
+  "site_remaining_group": {
+    "message": "残りのグループ"
+  },
+  "site_group_deleted_save_failed": {
+    "message": "グループを削除し、ウェブサイトを{name}に保持していますが、所属グループを保存できませんでした。しばらくしてから再試行してください。"
+  },
+  "site_group_deleted_moved": {
+    "message": "グループを削除し、そのウェブサイトを{name}に移動しました。"
+  },
+  "group_default_name": {
+    "message": "よく使う"
+  },
+  "group_migration_save_failed": {
+    "message": "グループは表示されていますが、更新後の設定を保存できませんでした。しばらくしてから再試行してください。"
+  },
+  "group_read_failed_preserved": {
+    "message": "ウェブサイトのグループを読み込めませんでした。ページを再読み込みしてから再試行してください。ウェブサイトのデータは削除されません。"
+  },
+  "group_icon_fallback": {
+    "message": "グ"
+  },
+  "group_deleted_other_tab": {
+    "message": "このグループは別のタブで削除されました。キャンセルしてから操作し直してください。"
+  },
+  "group_last_cannot_delete": {
+    "message": "少なくとも1つのグループが必要なため、このグループは削除できません。"
+  },
+  "group_delete_help": {
+    "message": "このグループを削除すると、中のウェブサイトは「{name}」に移動します。内容は削除されません。"
+  },
+  "group_selection_save_failed": {
+    "message": "グループの選択を保存できませんでした。しばらくしてから再試行してください。"
+  },
+  "group_settings_named": {
+    "message": "グループ「{name}」の設定"
+  },
+  "group_deleted_select_another": {
+    "message": "このグループは削除されています。別のグループを選択してください。"
+  },
+  "group_settings": {
+    "message": "グループの設定"
+  },
+  "group_add": {
+    "message": "グループを追加"
+  },
+  "group_save_action": {
+    "message": "保存"
+  },
+  "group_add_action": {
+    "message": "追加"
+  },
+  "group_delete_unavailable": {
+    "message": "現在このグループを削除できません。キャンセルしてから操作し直してください。"
+  },
+  "group_delete_confirm": {
+    "message": "グループ「{name}」を削除しますか？中のウェブサイトは保持され、「{destination}」に移動します。"
+  },
+  "group_last_recheck": {
+    "message": "少なくとも1つのグループが必要なため、現在は削除できません。グループを確認し直してください。"
+  },
+  "group_delete_failed": {
+    "message": "グループを削除できませんでした。ウェブサイトとグループは保持されています。しばらくしてから再試行してください。"
+  },
+  "group_name_invalid": {
+    "message": "グループ名を1～20文字で入力してください。"
+  },
+  "group_symbol_too_long": {
+    "message": "文字アイコンは8文字以内で入力してください。"
+  },
+  "group_read_failed": {
+    "message": "グループを読み込めませんでした。ページを再読み込みしてから再試行してください。"
+  },
+  "group_deleted_readd": {
+    "message": "このグループは削除されています。キャンセルしてから追加し直してください。"
+  },
+  "group_name_duplicate": {
+    "message": "同じ名前のグループがすでにあります。別の名前を使用してください。"
+  },
+  "group_save_failed": {
+    "message": "グループを保存できませんでした。しばらくしてから再試行してください。"
+  },
+  "sidebar_expand": {
+    "message": "グループサイドバーを展開"
+  },
+  "sidebar_collapse": {
+    "message": "グループサイドバーを折りたたむ"
+  },
+  "menu_website_named": {
+    "message": "{name}のウェブサイトメニュー"
+  },
+  "menu_open_named": {
+    "message": "{name}を開く"
+  },
+  "menu_edit_named": {
+    "message": "{name}を編集"
+  },
+  "menu_delete_named": {
+    "message": "{name}を削除"
+  },
+  "ui_new_tab": {
+    "message": "新しいタブ"
+  },
+  "ui_group_sidebar_label": {
+    "message": "ウェブサイトのグループサイドバー"
+  },
+  "ui_groups": {
+    "message": "グループ"
+  },
+  "ui_collapse_groups": {
+    "message": "グループサイドバーを折りたたむ"
+  },
+  "ui_switch_groups": {
+    "message": "ウェブサイトのグループを切り替える"
+  },
+  "ui_add_group": {
+    "message": "グループを追加"
+  },
+  "ui_settings": {
+    "message": "設定"
+  },
+  "ui_time_date": {
+    "message": "時刻と日付"
+  },
+  "ui_loading_date": {
+    "message": "日付を取得中…"
+  },
+  "ui_frequent_websites": {
+    "message": "よく使うウェブサイト"
+  },
+  "ui_empty_group": {
+    "message": "このグループにはまだウェブサイトがありません。空白の場所を右クリックして、よく使うウェブサイトを追加できます。"
+  },
+  "ui_other_websites": {
+    "message": "その他のウェブサイト"
+  },
+  "ui_close": {
+    "message": "閉じる"
+  },
+  "ui_overflow_help": {
+    "message": "グリッドの容量を超えたウェブサイトは削除されず、ここに保存されています。ここから開く、編集、削除ができます。"
+  },
+  "ui_background_menu": {
+    "message": "背景メニュー"
+  },
+  "ui_add_icon": {
+    "message": "アイコンを追加"
+  },
+  "ui_change_wallpaper": {
+    "message": "壁紙を変更"
+  },
+  "ui_website_menu": {
+    "message": "ウェブサイトメニュー"
+  },
+  "ui_website_actions_size": {
+    "message": "ウェブサイトの操作とアイコンのサイズ"
+  },
+  "ui_open": {
+    "message": "開く"
+  },
+  "ui_edit": {
+    "message": "編集"
+  },
+  "ui_size_normal": {
+    "message": "標準"
+  },
+  "ui_size_wide": {
+    "message": "横長のアイコン"
+  },
+  "ui_size_tall": {
+    "message": "縦長のアイコン"
+  },
+  "ui_size_large": {
+    "message": "大きいアイコン"
+  },
+  "ui_delete": {
+    "message": "削除"
+  },
+  "ui_add_website": {
+    "message": "ウェブサイトを追加"
+  },
+  "ui_website_name": {
+    "message": "ウェブサイト名"
+  },
+  "ui_website_address": {
+    "message": "ウェブサイトのアドレス"
+  },
+  "ui_website_address_help": {
+    "message": "http:// と https:// に対応しています。プロトコルを省略すると https:// が使用されます。"
+  },
+  "ui_website_icon": {
+    "message": "ウェブサイトのアイコン"
+  },
+  "ui_fetch_icon": {
+    "message": "アイコンを取得"
+  },
+  "ui_default_icon": {
+    "message": "既定のアイコンを使用"
+  },
+  "ui_website_icon_help": {
+    "message": "入力したアドレスからアイコンを取得するか、画像（最大 2 MiB）をアップロードできます。取得時に Firefox がウェブサイトへのアクセス許可を求める場合があります。保存すると反映されます。"
+  },
+  "ui_cancel": {
+    "message": "キャンセル"
+  },
+  "ui_save": {
+    "message": "保存"
+  },
+  "ui_group_name": {
+    "message": "グループ名"
+  },
+  "ui_group_icon": {
+    "message": "グループのアイコン"
+  },
+  "ui_group_symbol_placeholder": {
+    "message": "例：📁、⭐"
+  },
+  "ui_text_icon": {
+    "message": "文字アイコンを使用"
+  },
+  "ui_upload_group_icon": {
+    "message": "グループのアイコンをアップロード"
+  },
+  "ui_group_icon_help": {
+    "message": "絵文字や文字を入力するか、ローカルの画像（最大 2 MiB）をアップロードできます。"
+  },
+  "ui_delete_group": {
+    "message": "グループを削除"
+  },
+  "ui_add": {
+    "message": "追加"
+  },
+  "ui_personalization": {
+    "message": "パーソナライズ"
+  },
+  "ui_close_settings": {
+    "message": "設定を閉じる"
+  },
+  "ui_background": {
+    "message": "背景"
+  },
+  "ui_preset_wallpapers": {
+    "message": "プリセットの壁紙"
+  },
+  "ui_click_to_switch": {
+    "message": "クリックして切り替え"
+  },
+  "ui_common_background_colors": {
+    "message": "よく使う背景色"
+  },
+  "ui_background_image": {
+    "message": "背景画像"
+  },
+  "ui_background_image_help": {
+    "message": "選択すると自動で適用されます。最大 10 MiB。このブラウザー内にのみ保存されます。"
+  },
+  "ui_reset_background": {
+    "message": "既定の背景に戻す"
+  },
+  "ui_appearance": {
+    "message": "外観"
+  },
+  "ui_theme": {
+    "message": "テーマ"
+  },
+  "ui_dark": {
+    "message": "ダーク"
+  },
+  "ui_light": {
+    "message": "ライト"
+  },
+  "ui_follow_system": {
+    "message": "システム設定に合わせる"
+  },
+  "ui_show_clock": {
+    "message": "時計を表示"
+  },
+  "ui_wallpaper_processing": {
+    "message": "背景の処理が完了してから壁紙を選択してください。"
+  },
+  "ui_group_full": {
+    "message": "このグループの基本マス {count} 個はすべて埋まっています。先に空きを作ってください。"
+  },
+  "ui_add_website_icon": {
+    "message": "ウェブサイトのアイコンを追加"
+  },
+  "image_invalid_size": {
+    "message": "2 MiB 以下の有効な画像を選択してください。"
+  },
+  "image_unsupported_type": {
+    "message": "PNG、JPEG、WebP、GIF、AVIF、ICO のいずれかの画像を選択してください。"
+  },
+  "image_create_failed": {
+    "message": "この画像からアイコンを作成できません。別の画像を選択してください。"
+  },
+  "fetch_resource_too_large": {
+    "message": "アイコンのデータがサイズ制限を超えています。"
+  },
+  "fetch_empty_content": {
+    "message": "ウェブサイトから空のコンテンツが返されました。"
+  },
+  "fetch_aborted": {
+    "message": "アイコンのリクエストが中止されました。"
+  },
+  "fetch_unavailable": {
+    "message": "現在、このウェブサイトからアイコンを取得できません。"
+  },
+  "fetch_unsupported_url": {
+    "message": "ウェブサイトから未対応のアドレスが返されました。"
+  },
+  "fetch_invalid_website_url": {
+    "message": "先に有効な HTTP または HTTPS のウェブサイトアドレスを入力してください。"
+  },
+  "fetch_permission_unavailable": {
+    "message": "現在、ブラウザーからウェブサイトへのアクセス許可をリクエストできません。端末内のアイコンをアップロードしてください。"
+  },
+  "fetch_permission_failed": {
+    "message": "ウェブサイトへのアクセス許可をリクエストできませんでした。もう一度試すか、端末内のアイコンをアップロードしてください。"
+  },
+  "fetch_permission_denied": {
+    "message": "このウェブサイトへのアクセスが許可されていないため、アイコンを取得できません。端末内のアイコンはアップロードできます。"
+  },
+  "fetch_timeout": {
+    "message": "アイコンの取得がタイムアウトしました。"
+  },
+  "fetch_timeout_retry": {
+    "message": "アイコンの取得がタイムアウトしました。後でもう一度試すか、端末内のアイコンをアップロードしてください。"
+  },
+  "fetch_no_icon": {
+    "message": "使用できるアイコンを取得できませんでした。アドレスを確認するか、後でもう一度試すか、端末内の画像をアップロードしてください。"
+  },
+  "layout_grid_full": {
+    "message": "このグループの 10×6 グリッドには十分な空きがありません。"
+  },
+  "layout_mobile_failed": {
+    "message": "現在、モバイル用のアイコン配置を作成できません。"
+  },
+  "grid_drop_no_space": {
+    "message": "移動先に十分な空きがないため、元の位置を保持しました。"
+  },
+  "extension_name": {
+    "message": "シンプルな新しいタブ"
+  },
+  "extension_description": {
+    "message": "ローカル時刻の時計、カスタム背景、よく使うウェブサイトへのショートカットを備えたシンプルな Firefox の新しいタブです。"
+  },
+  "background_storage_access_error": {
+    "message": "ローカルの背景ストレージに現在アクセスできません。しばらくしてからもう一度お試しください。"
+  },
+  "background_storage_blocked_error": {
+    "message": "背景ストレージが別のページで使用されています。古いタブを閉じてからもう一度お試しください。"
+  },
+  "background_storage_save_error": {
+    "message": "背景設定をローカルに保存できませんでした。しばらくしてからもう一度お試しください。"
+  },
+  "background_image_format_error": {
+    "message": "PNG、JPEG、WebP、GIF、AVIF 形式の画像を選択してください。"
+  },
+  "background_empty_image_error": {
+    "message": "この画像は空のファイルです。別の画像を選択してください。"
+  },
+  "background_image_size_error": {
+    "message": "画像は 10 MiB 以下にしてください。より小さい画像を選択してください。"
+  },
+  "background_image_decode_error": {
+    "message": "この画像を開けませんでした。別の画像を選択してください。"
+  },
+  "background_preset_unavailable": {
+    "message": "このプリセットの壁紙は使用できません。別の壁紙を選択してください。"
+  },
+  "background_update_error": {
+    "message": "現在、背景を更新できません。しばらくしてからもう一度お試しください。"
+  },
+  "background_saving_color": {
+    "message": "単色の背景を保存中…"
+  },
+  "background_saved_color": {
+    "message": "単色の背景を適用して保存しました。"
+  },
+  "background_wallpaper_label": {
+    "message": "背景画像を選択、{index} 番目"
+  },
+  "background_saving_wallpaper": {
+    "message": "壁紙を保存中…"
+  },
+  "background_saved_wallpaper": {
+    "message": "壁紙を適用して保存しました。"
+  },
+  "background_saving_image": {
+    "message": "背景画像を読み込んで保存中…"
+  },
+  "background_saved_image": {
+    "message": "背景画像を適用して保存しました。"
+  },
+  "background_restoring": {
+    "message": "既定の背景に戻しています…"
+  },
+  "background_restored": {
+    "message": "既定の背景に戻しました。"
+  },
+  "background_saved_invalid": {
+    "message": "保存された背景設定が無効です。"
+  },
+  "background_load_error": {
+    "message": "保存された背景を現在読み込めないため、既定の背景を使用しています。背景を設定し直すか、既定の背景に戻すことができます。"
+  },
+  "color_snow_white": {
+    "message": "雪白"
+  },
+  "color_ivory": {
+    "message": "象牙色"
+  },
+  "color_fog_gray": {
+    "message": "霧色"
+  },
+  "color_silver_gray": {
+    "message": "銀灰色"
+  },
+  "color_limestone_gray": {
+    "message": "石灰岩グレー"
+  },
+  "color_slate_gray": {
+    "message": "スレートグレー"
+  },
+  "color_charcoal_gray": {
+    "message": "チャコールグレー"
+  },
+  "color_ink_black": {
+    "message": "墨色"
+  },
+  "color_cherry_red": {
+    "message": "チェリーレッド"
+  },
+  "color_coral_red": {
+    "message": "コーラルレッド"
+  },
+  "color_rose_red": {
+    "message": "ローズレッド"
+  },
+  "color_orange_red": {
+    "message": "赤橙色"
+  },
+  "color_apricot": {
+    "message": "アプリコット"
+  },
+  "color_amber": {
+    "message": "琥珀色"
+  },
+  "color_golden_yellow": {
+    "message": "黄金色"
+  },
+  "color_warm_brown": {
+    "message": "暖かみのある茶色"
+  },
+  "color_terracotta": {
+    "message": "テラコッタ"
+  },
+  "color_cinnamon": {
+    "message": "シナモン"
+  },
+  "color_grass_green": {
+    "message": "草緑色"
+  },
+  "color_leaf_green": {
+    "message": "葉緑色"
+  },
+  "color_emerald": {
+    "message": "エメラルド"
+  },
+  "color_teal": {
+    "message": "青緑色"
+  },
+  "color_lake_cyan": {
+    "message": "湖水色"
+  },
+  "color_sky_blue": {
+    "message": "空色"
+  },
+  "color_azure_blue": {
+    "message": "アジュールブルー"
+  },
+  "color_indigo": {
+    "message": "藍色"
+  },
+  "color_violet": {
+    "message": "バイオレット"
+  },
+  "color_orchid_purple": {
+    "message": "オーキッドパープル"
+  },
+  "color_magenta": {
+    "message": "マゼンタ"
+  },
+  "color_berry_purple": {
+    "message": "ベリーパープル"
+  },
+  "color_cream": {
+    "message": "クリーム色"
+  },
+  "color_peach": {
+    "message": "ピーチ"
+  },
+  "color_light_coral": {
+    "message": "ライトコーラル"
+  },
+  "color_pale_pink": {
+    "message": "淡いピンク"
+  },
+  "color_pale_purple": {
+    "message": "淡い紫"
+  },
+  "color_lavender": {
+    "message": "ラベンダー"
+  },
+  "color_ice_blue": {
+    "message": "アイスブルー"
+  },
+  "color_light_cyan": {
+    "message": "ライトシアン"
+  },
+  "color_mint": {
+    "message": "ミント"
+  },
+  "color_light_green": {
+    "message": "薄緑色"
+  },
+  "color_deep_sea_blue": {
+    "message": "深海ブルー"
+  },
+  "color_midnight_blue": {
+    "message": "ミッドナイトブルー"
+  },
+  "color_dark_indigo": {
+    "message": "ダークインディゴ"
+  },
+  "color_dark_purple": {
+    "message": "濃紫色"
+  },
+  "color_forest_green": {
+    "message": "フォレストグリーン"
+  },
+  "color_dark_teal": {
+    "message": "濃い青緑"
+  },
+  "color_wine_red": {
+    "message": "ワインレッド"
+  },
+  "color_espresso": {
+    "message": "エスプレッソ"
+  }
+}

@@ -1,0 +1,698 @@
+{
+  "site_address_required": {
+    "message": "请输入网站地址。"
+  },
+  "site_address_invalid": {
+    "message": "请输入有效的网站地址，例如 https://example.com。"
+  },
+  "site_address_http_only": {
+    "message": "网站地址仅支持 http:// 或 https://。"
+  },
+  "site_icon_fallback": {
+    "message": "网"
+  },
+  "site_icon_fetch": {
+    "message": "获取图标"
+  },
+  "site_migration_save_failed": {
+    "message": "网站已保留在本页，但暂时无法保存旧数据迁移，请稍后重试。"
+  },
+  "site_invalid_saved_entries": {
+    "message": "部分已保存的网站信息无效，已忽略这些条目。"
+  },
+  "site_read_extension_failed": {
+    "message": "暂时无法读取已保存的网站，请重新载入扩展后再试。"
+  },
+  "site_read_reload_failed": {
+    "message": "暂时无法读取已保存的网站，请重新载入后再试。"
+  },
+  "site_arrange_failed": {
+    "message": "暂时无法排列网站，请重新载入后再试。"
+  },
+  "site_overflow_capacity": {
+    "message": "此分组已有超出网格容量的网站，请先删除网站或缩小图标。"
+  },
+  "site_capacity_full": {
+    "message": "此分组的 60 个基础格已满，请先删除网站或缩小图标。"
+  },
+  "site_grid_layout_failed": {
+    "message": "暂时无法排列网格，网站仍已保留，可稍后重新载入。"
+  },
+  "site_grid_save_failed": {
+    "message": "暂时无法保存网格位置，请稍后重试。"
+  },
+  "site_read_retry_failed": {
+    "message": "暂时无法读取已保存的网站，请稍后重试。"
+  },
+  "site_edit": {
+    "message": "编辑网站"
+  },
+  "site_add": {
+    "message": "添加网站"
+  },
+  "site_delete_confirm": {
+    "message": "确定删除“{name}”的快捷入口吗？"
+  },
+  "site_delete_read_failed": {
+    "message": "暂时无法读取已保存的网站，内容尚未删除。"
+  },
+  "site_delete_save_failed": {
+    "message": "暂时无法保存更改，内容尚未删除，请稍后重试。"
+  },
+  "site_deleted": {
+    "message": "已删除网站快捷入口。"
+  },
+  "site_resize_read_failed": {
+    "message": "暂时无法读取已保存的网站，原尺寸已保留。"
+  },
+  "site_resize_no_space": {
+    "message": "此分组没有足够空位，原图标尺寸已保留。请先删除网站或缩小图标。"
+  },
+  "site_resize_failed": {
+    "message": "暂时无法调整图标尺寸，原尺寸已保留。"
+  },
+  "site_resize_save_failed": {
+    "message": "暂时无法保存图标尺寸，原尺寸已保留，请稍后重试。"
+  },
+  "site_overflow_count": {
+    "message": "其余网站（{count}）"
+  },
+  "site_edit_action": {
+    "message": "编辑"
+  },
+  "site_edit_named": {
+    "message": "编辑 {name}"
+  },
+  "site_delete_action": {
+    "message": "删除"
+  },
+  "site_delete_named": {
+    "message": "删除 {name}"
+  },
+  "site_rearrange_save_failed": {
+    "message": "网站已保留，但暂时无法保存重新排列的位置。"
+  },
+  "site_grid_overflow_failed": {
+    "message": "暂时无法排列网格，网站仍可在“其余网站”中管理。"
+  },
+  "site_icon_fetch_unavailable": {
+    "message": "图标获取暂时不可用，请稍后重试或上传图片。"
+  },
+  "site_icon_fetching": {
+    "message": "获取中…"
+  },
+  "site_icon_fetch_invalid": {
+    "message": "暂时无法获取有效的网站图标，请尝试上传图片。"
+  },
+  "site_icon_fetch_failed": {
+    "message": "暂时无法获取网站图标，请稍后重试。"
+  },
+  "site_name_invalid": {
+    "message": "请输入 1 到 50 个字符的网站名称。"
+  },
+  "site_deleted_elsewhere": {
+    "message": "该网站已被删除，请取消后重新添加。"
+  },
+  "site_save_failed": {
+    "message": "暂时无法保存网站，请稍后重试。"
+  },
+  "site_saved": {
+    "message": "已保存网站修改。"
+  },
+  "site_added": {
+    "message": "已添加网站快捷入口。"
+  },
+  "site_move_read_failed": {
+    "message": "暂时无法读取已保存的网站，原位置已保留。"
+  },
+  "site_move_failed": {
+    "message": "暂时无法移动该项目，请稍后重试。"
+  },
+  "site_move_overflow": {
+    "message": "该网站已在其余网站列表中，原位置已保留。"
+  },
+  "site_move_group_full": {
+    "message": "目标分组没有足够空位，网站仍保留在原分组。"
+  },
+  "site_move_no_space": {
+    "message": "该位置无法容纳现有图标，原位置已保留。"
+  },
+  "site_move_save_failed": {
+    "message": "暂时无法保存移动，已恢复原位置。"
+  },
+  "site_move_saved": {
+    "message": "已保存新位置。"
+  },
+  "site_named_group": {
+    "message": "“{name}”"
+  },
+  "site_remaining_group": {
+    "message": "剩余分组"
+  },
+  "site_group_deleted_save_failed": {
+    "message": "分组已删除，网站已保留在{name}；暂时无法保存网站分组归属，请稍后重试。"
+  },
+  "site_group_deleted_moved": {
+    "message": "分组已删除，其中的网站已移至{name}。"
+  },
+  "group_default_name": {
+    "message": "常用"
+  },
+  "group_migration_save_failed": {
+    "message": "分组已兼容显示，但暂时无法保存升级后的设置，请稍后重试。"
+  },
+  "group_read_failed_preserved": {
+    "message": "暂时无法读取网站分组，请重新载入后重试；网站数据不会被删除。"
+  },
+  "group_icon_fallback": {
+    "message": "组"
+  },
+  "group_deleted_other_tab": {
+    "message": "该分组已在另一标签页中删除，请取消后重新操作。"
+  },
+  "group_last_cannot_delete": {
+    "message": "至少保留一个分组，当前分组无法删除。"
+  },
+  "group_delete_help": {
+    "message": "删除分组后，其中的网站会移到“{name}”，不会删除内容。"
+  },
+  "group_selection_save_failed": {
+    "message": "暂时无法保存分组选择，请稍后重试。"
+  },
+  "group_settings_named": {
+    "message": "设置分组 {name}"
+  },
+  "group_deleted_select_another": {
+    "message": "该分组已被删除，请选择其他分组。"
+  },
+  "group_settings": {
+    "message": "分组设置"
+  },
+  "group_add": {
+    "message": "添加分组"
+  },
+  "group_save_action": {
+    "message": "保存"
+  },
+  "group_add_action": {
+    "message": "添加"
+  },
+  "group_delete_unavailable": {
+    "message": "暂时无法删除此分组，请取消后重新操作。"
+  },
+  "group_delete_confirm": {
+    "message": "删除分组“{name}”？其中的网站会保留并移到“{destination}”。"
+  },
+  "group_last_recheck": {
+    "message": "至少保留一个分组，当前无法删除，请重新查看分组。"
+  },
+  "group_delete_failed": {
+    "message": "暂时无法删除分组，网站和分组均已保留，请稍后重试。"
+  },
+  "group_name_invalid": {
+    "message": "请输入 1 到 20 个字符的分组名称。"
+  },
+  "group_symbol_too_long": {
+    "message": "文字图标最多 8 个字符。"
+  },
+  "group_read_failed": {
+    "message": "暂时无法读取分组，请重新载入后重试。"
+  },
+  "group_deleted_readd": {
+    "message": "该分组已被删除，请取消后重新添加。"
+  },
+  "group_name_duplicate": {
+    "message": "已有同名分组，请使用其他名称。"
+  },
+  "group_save_failed": {
+    "message": "暂时无法保存分组，请稍后重试。"
+  },
+  "sidebar_expand": {
+    "message": "展开分组栏"
+  },
+  "sidebar_collapse": {
+    "message": "收起分组栏"
+  },
+  "menu_website_named": {
+    "message": "{name}的网站菜单"
+  },
+  "menu_open_named": {
+    "message": "打开 {name}"
+  },
+  "menu_edit_named": {
+    "message": "编辑 {name}"
+  },
+  "menu_delete_named": {
+    "message": "删除 {name}"
+  },
+  "ui_new_tab": {
+    "message": "新标签页"
+  },
+  "ui_group_sidebar_label": {
+    "message": "网站分组栏"
+  },
+  "ui_groups": {
+    "message": "分组"
+  },
+  "ui_collapse_groups": {
+    "message": "收起分组栏"
+  },
+  "ui_switch_groups": {
+    "message": "切换网站分组"
+  },
+  "ui_add_group": {
+    "message": "添加分组"
+  },
+  "ui_settings": {
+    "message": "设置"
+  },
+  "ui_time_date": {
+    "message": "时间和日期"
+  },
+  "ui_loading_date": {
+    "message": "正在获取日期…"
+  },
+  "ui_frequent_websites": {
+    "message": "常用网站"
+  },
+  "ui_empty_group": {
+    "message": "此分组还没有网站。右键点击空白处，添加常用网站。"
+  },
+  "ui_other_websites": {
+    "message": "其余网站"
+  },
+  "ui_close": {
+    "message": "关闭"
+  },
+  "ui_overflow_help": {
+    "message": "超出网格容量的网站仍保存在这里，未被删除。可在此打开、编辑或删除网站。"
+  },
+  "ui_background_menu": {
+    "message": "背景菜单"
+  },
+  "ui_add_icon": {
+    "message": "添加图标"
+  },
+  "ui_change_wallpaper": {
+    "message": "换壁纸"
+  },
+  "ui_website_menu": {
+    "message": "网站菜单"
+  },
+  "ui_website_actions_size": {
+    "message": "网站操作与图标大小"
+  },
+  "ui_open": {
+    "message": "打开"
+  },
+  "ui_edit": {
+    "message": "编辑"
+  },
+  "ui_size_normal": {
+    "message": "正常"
+  },
+  "ui_size_wide": {
+    "message": "横图标"
+  },
+  "ui_size_tall": {
+    "message": "竖图标"
+  },
+  "ui_size_large": {
+    "message": "大图标"
+  },
+  "ui_delete": {
+    "message": "删除"
+  },
+  "ui_add_website": {
+    "message": "添加网站"
+  },
+  "ui_website_name": {
+    "message": "网站名称"
+  },
+  "ui_website_address": {
+    "message": "网站地址"
+  },
+  "ui_website_address_help": {
+    "message": "支持 http:// 和 https://；省略协议时默认使用 https://。"
+  },
+  "ui_website_icon": {
+    "message": "网站图标"
+  },
+  "ui_fetch_icon": {
+    "message": "获取图标"
+  },
+  "ui_default_icon": {
+    "message": "使用默认图标"
+  },
+  "ui_website_icon_help": {
+    "message": "可按填写的网址获取图标，也可上传图片（最大 2 MiB）。获取时 Firefox 可能请求该网站的访问权限，保存后生效。"
+  },
+  "ui_cancel": {
+    "message": "取消"
+  },
+  "ui_save": {
+    "message": "保存"
+  },
+  "ui_group_name": {
+    "message": "分组名称"
+  },
+  "ui_group_icon": {
+    "message": "分组图标"
+  },
+  "ui_group_symbol_placeholder": {
+    "message": "例如 📁、⭐"
+  },
+  "ui_text_icon": {
+    "message": "使用文字图标"
+  },
+  "ui_upload_group_icon": {
+    "message": "上传分组图标"
+  },
+  "ui_group_icon_help": {
+    "message": "可填写表情或文字，也可上传本地图片，最大 2 MiB。"
+  },
+  "ui_delete_group": {
+    "message": "删除分组"
+  },
+  "ui_add": {
+    "message": "添加"
+  },
+  "ui_personalization": {
+    "message": "个性化"
+  },
+  "ui_close_settings": {
+    "message": "关闭设置"
+  },
+  "ui_background": {
+    "message": "背景"
+  },
+  "ui_preset_wallpapers": {
+    "message": "预设壁纸"
+  },
+  "ui_click_to_switch": {
+    "message": "点击切换"
+  },
+  "ui_common_background_colors": {
+    "message": "常用背景色"
+  },
+  "ui_background_image": {
+    "message": "背景图片"
+  },
+  "ui_background_image_help": {
+    "message": "选择后自动应用，最大 10 MiB，仅保存在此浏览器中。"
+  },
+  "ui_reset_background": {
+    "message": "恢复默认背景"
+  },
+  "ui_appearance": {
+    "message": "外观"
+  },
+  "ui_theme": {
+    "message": "主题"
+  },
+  "ui_dark": {
+    "message": "黑色"
+  },
+  "ui_light": {
+    "message": "白色"
+  },
+  "ui_follow_system": {
+    "message": "跟随系统"
+  },
+  "ui_show_clock": {
+    "message": "显示时钟"
+  },
+  "ui_wallpaper_processing": {
+    "message": "请等待背景处理完成后再选择壁纸。"
+  },
+  "ui_group_full": {
+    "message": "当前分组的 {count} 个基础格已满，请先腾出空位。"
+  },
+  "ui_add_website_icon": {
+    "message": "添加网站图标"
+  },
+  "image_invalid_size": {
+    "message": "请选择不超过 2 MiB 的有效图片。"
+  },
+  "image_unsupported_type": {
+    "message": "请选择 PNG、JPEG、WebP、GIF、AVIF 或 ICO 图片。"
+  },
+  "image_create_failed": {
+    "message": "这张图片无法生成图标，请选择其他图片。"
+  },
+  "fetch_resource_too_large": {
+    "message": "图标资源超过大小限制。"
+  },
+  "fetch_empty_content": {
+    "message": "网站返回了空内容。"
+  },
+  "fetch_aborted": {
+    "message": "图标请求已中止。"
+  },
+  "fetch_unavailable": {
+    "message": "网站暂时无法提供图标。"
+  },
+  "fetch_unsupported_url": {
+    "message": "网站返回了不支持的地址。"
+  },
+  "fetch_invalid_website_url": {
+    "message": "请先填写有效的 HTTP 或 HTTPS 网站地址。"
+  },
+  "fetch_permission_unavailable": {
+    "message": "浏览器暂时无法请求网站访问授权，请上传本地图标。"
+  },
+  "fetch_permission_failed": {
+    "message": "无法请求网站访问授权，请重试或上传本地图标。"
+  },
+  "fetch_permission_denied": {
+    "message": "未获得当前网站的访问授权，无法获取图标。你仍可上传本地图标。"
+  },
+  "fetch_timeout": {
+    "message": "获取图标超时。"
+  },
+  "fetch_timeout_retry": {
+    "message": "获取图标超时，请稍后重试或上传本地图标。"
+  },
+  "fetch_no_icon": {
+    "message": "未能获取可用图标，请检查网址、稍后重试或上传本地图片。"
+  },
+  "layout_grid_full": {
+    "message": "当前分组的 10×6 网格没有足够的可用位置。"
+  },
+  "layout_mobile_failed": {
+    "message": "暂时无法排列移动端图标。"
+  },
+  "grid_drop_no_space": {
+    "message": "目标位置没有足够的空位，已保留原位置。"
+  },
+  "extension_name": {
+    "message": "简洁新标签页"
+  },
+  "extension_description": {
+    "message": "带有本地时钟、自定义背景和常用网站快捷入口的简洁 Firefox 新标签页。"
+  },
+  "background_storage_access_error": {
+    "message": "暂时无法访问本地背景存储，请稍后重试。"
+  },
+  "background_storage_blocked_error": {
+    "message": "背景存储正在被其他页面占用，请关闭旧标签页后重试。"
+  },
+  "background_storage_save_error": {
+    "message": "背景设置未能完成本地保存，请稍后重试。"
+  },
+  "background_image_format_error": {
+    "message": "请选择 PNG、JPEG、WebP、GIF 或 AVIF 格式的图片。"
+  },
+  "background_empty_image_error": {
+    "message": "这张图片是空文件，请选择其他图片。"
+  },
+  "background_image_size_error": {
+    "message": "图片大小不能超过 10 MiB，请选择较小的图片。"
+  },
+  "background_image_decode_error": {
+    "message": "这张图片无法正常打开，请选择其他图片。"
+  },
+  "background_preset_unavailable": {
+    "message": "这张预设壁纸不可用，请重新选择。"
+  },
+  "background_update_error": {
+    "message": "暂时无法更新背景，请稍后重试。"
+  },
+  "background_saving_color": {
+    "message": "正在保存纯色背景…"
+  },
+  "background_saved_color": {
+    "message": "纯色背景已应用并保存。"
+  },
+  "background_wallpaper_label": {
+    "message": "选择背景图片，第{index}项"
+  },
+  "background_saving_wallpaper": {
+    "message": "正在保存图片壁纸…"
+  },
+  "background_saved_wallpaper": {
+    "message": "图片壁纸已应用并保存。"
+  },
+  "background_saving_image": {
+    "message": "正在读取并保存图片背景…"
+  },
+  "background_saved_image": {
+    "message": "图片背景已应用并保存。"
+  },
+  "background_restoring": {
+    "message": "正在恢复默认背景…"
+  },
+  "background_restored": {
+    "message": "已恢复默认背景。"
+  },
+  "background_saved_invalid": {
+    "message": "已保存的背景设置无效。"
+  },
+  "background_load_error": {
+    "message": "暂时无法读取已保存的背景，当前使用默认背景。可重新设置背景或恢复默认。"
+  },
+  "color_snow_white": {
+    "message": "雪白"
+  },
+  "color_ivory": {
+    "message": "象牙白"
+  },
+  "color_fog_gray": {
+    "message": "雾灰"
+  },
+  "color_silver_gray": {
+    "message": "银灰"
+  },
+  "color_limestone_gray": {
+    "message": "石灰"
+  },
+  "color_slate_gray": {
+    "message": "岩灰"
+  },
+  "color_charcoal_gray": {
+    "message": "炭灰"
+  },
+  "color_ink_black": {
+    "message": "墨黑"
+  },
+  "color_cherry_red": {
+    "message": "樱桃红"
+  },
+  "color_coral_red": {
+    "message": "珊瑚红"
+  },
+  "color_rose_red": {
+    "message": "玫瑰红"
+  },
+  "color_orange_red": {
+    "message": "橘红"
+  },
+  "color_apricot": {
+    "message": "杏橙"
+  },
+  "color_amber": {
+    "message": "琥珀"
+  },
+  "color_golden_yellow": {
+    "message": "金黄"
+  },
+  "color_warm_brown": {
+    "message": "暖棕"
+  },
+  "color_terracotta": {
+    "message": "陶土"
+  },
+  "color_cinnamon": {
+    "message": "肉桂"
+  },
+  "color_grass_green": {
+    "message": "草绿"
+  },
+  "color_leaf_green": {
+    "message": "叶绿"
+  },
+  "color_emerald": {
+    "message": "翡翠"
+  },
+  "color_teal": {
+    "message": "青绿"
+  },
+  "color_lake_cyan": {
+    "message": "湖青"
+  },
+  "color_sky_blue": {
+    "message": "天蓝"
+  },
+  "color_azure_blue": {
+    "message": "湛蓝"
+  },
+  "color_indigo": {
+    "message": "靛蓝"
+  },
+  "color_violet": {
+    "message": "紫罗兰"
+  },
+  "color_orchid_purple": {
+    "message": "兰紫"
+  },
+  "color_magenta": {
+    "message": "洋红"
+  },
+  "color_berry_purple": {
+    "message": "莓紫"
+  },
+  "color_cream": {
+    "message": "奶油"
+  },
+  "color_peach": {
+    "message": "蜜桃"
+  },
+  "color_light_coral": {
+    "message": "浅珊瑚"
+  },
+  "color_pale_pink": {
+    "message": "浅粉"
+  },
+  "color_pale_purple": {
+    "message": "淡紫"
+  },
+  "color_lavender": {
+    "message": "薰衣草"
+  },
+  "color_ice_blue": {
+    "message": "冰蓝"
+  },
+  "color_light_cyan": {
+    "message": "浅青"
+  },
+  "color_mint": {
+    "message": "薄荷"
+  },
+  "color_light_green": {
+    "message": "浅绿"
+  },
+  "color_deep_sea_blue": {
+    "message": "深海蓝"
+  },
+  "color_midnight_blue": {
+    "message": "午夜蓝"
+  },
+  "color_dark_indigo": {
+    "message": "暗靛"
+  },
+  "color_dark_purple": {
+    "message": "深紫"
+  },
+  "color_forest_green": {
+    "message": "墨绿"
+  },
+  "color_dark_teal": {
+    "message": "深青"
+  },
+  "color_wine_red": {
+    "message": "酒红"
+  },
+  "color_espresso": {
+    "message": "浓咖"
+  }
+}

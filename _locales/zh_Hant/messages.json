@@ -1,0 +1,698 @@
+{
+  "site_address_required": {
+    "message": "請輸入網站位址。"
+  },
+  "site_address_invalid": {
+    "message": "請輸入有效的網站位址，例如 https://example.com。"
+  },
+  "site_address_http_only": {
+    "message": "網站位址僅支援 http:// 或 https://。"
+  },
+  "site_icon_fallback": {
+    "message": "網"
+  },
+  "site_icon_fetch": {
+    "message": "取得圖示"
+  },
+  "site_migration_save_failed": {
+    "message": "網站已保留在本頁，但暫時無法儲存舊資料移轉結果，請稍後重試。"
+  },
+  "site_invalid_saved_entries": {
+    "message": "部分已儲存的網站資訊無效，已略過這些項目。"
+  },
+  "site_read_extension_failed": {
+    "message": "暫時無法讀取已儲存的網站，請重新載入擴充套件後再試。"
+  },
+  "site_read_reload_failed": {
+    "message": "暫時無法讀取已儲存的網站，請重新載入後再試。"
+  },
+  "site_arrange_failed": {
+    "message": "暫時無法排列網站，請重新載入後再試。"
+  },
+  "site_overflow_capacity": {
+    "message": "此分組已有超出網格容量的網站，請先刪除網站或縮小圖示。"
+  },
+  "site_capacity_full": {
+    "message": "此分組的 60 個基本格已滿，請先刪除網站或縮小圖示。"
+  },
+  "site_grid_layout_failed": {
+    "message": "暫時無法排列網格，網站仍已保留，可稍後重新載入。"
+  },
+  "site_grid_save_failed": {
+    "message": "暫時無法儲存網格位置，請稍後重試。"
+  },
+  "site_read_retry_failed": {
+    "message": "暫時無法讀取已儲存的網站，請稍後重試。"
+  },
+  "site_edit": {
+    "message": "編輯網站"
+  },
+  "site_add": {
+    "message": "新增網站"
+  },
+  "site_delete_confirm": {
+    "message": "確定刪除「{name}」的捷徑嗎？"
+  },
+  "site_delete_read_failed": {
+    "message": "暫時無法讀取已儲存的網站，內容尚未刪除。"
+  },
+  "site_delete_save_failed": {
+    "message": "暫時無法儲存變更，內容尚未刪除，請稍後重試。"
+  },
+  "site_deleted": {
+    "message": "已刪除網站捷徑。"
+  },
+  "site_resize_read_failed": {
+    "message": "暫時無法讀取已儲存的網站，原尺寸已保留。"
+  },
+  "site_resize_no_space": {
+    "message": "此分組沒有足夠空位，原圖示尺寸已保留。請先刪除網站或縮小圖示。"
+  },
+  "site_resize_failed": {
+    "message": "暫時無法調整圖示尺寸，原尺寸已保留。"
+  },
+  "site_resize_save_failed": {
+    "message": "暫時無法儲存圖示尺寸，原尺寸已保留，請稍後重試。"
+  },
+  "site_overflow_count": {
+    "message": "其餘網站（{count}）"
+  },
+  "site_edit_action": {
+    "message": "編輯"
+  },
+  "site_edit_named": {
+    "message": "編輯 {name}"
+  },
+  "site_delete_action": {
+    "message": "刪除"
+  },
+  "site_delete_named": {
+    "message": "刪除 {name}"
+  },
+  "site_rearrange_save_failed": {
+    "message": "網站已保留，但暫時無法儲存重新排列的位置。"
+  },
+  "site_grid_overflow_failed": {
+    "message": "暫時無法排列網格，網站仍可在「其餘網站」中管理。"
+  },
+  "site_icon_fetch_unavailable": {
+    "message": "暫時無法取得圖示，請稍後重試或上傳圖片。"
+  },
+  "site_icon_fetching": {
+    "message": "取得中…"
+  },
+  "site_icon_fetch_invalid": {
+    "message": "暫時無法取得有效的網站圖示，請嘗試上傳圖片。"
+  },
+  "site_icon_fetch_failed": {
+    "message": "暫時無法取得網站圖示，請稍後重試。"
+  },
+  "site_name_invalid": {
+    "message": "請輸入 1 到 50 個字元的網站名稱。"
+  },
+  "site_deleted_elsewhere": {
+    "message": "該網站已被刪除，請取消後重新新增。"
+  },
+  "site_save_failed": {
+    "message": "暫時無法儲存網站，請稍後重試。"
+  },
+  "site_saved": {
+    "message": "已儲存網站變更。"
+  },
+  "site_added": {
+    "message": "已新增網站捷徑。"
+  },
+  "site_move_read_failed": {
+    "message": "暫時無法讀取已儲存的網站，原位置已保留。"
+  },
+  "site_move_failed": {
+    "message": "暫時無法移動此項目，請稍後重試。"
+  },
+  "site_move_overflow": {
+    "message": "該網站已在其餘網站清單中，原位置已保留。"
+  },
+  "site_move_group_full": {
+    "message": "目標分組沒有足夠空位，網站仍保留在原分組。"
+  },
+  "site_move_no_space": {
+    "message": "該位置無法容納現有圖示，原位置已保留。"
+  },
+  "site_move_save_failed": {
+    "message": "暫時無法儲存移動結果，已還原原位置。"
+  },
+  "site_move_saved": {
+    "message": "已儲存新位置。"
+  },
+  "site_named_group": {
+    "message": "「{name}」"
+  },
+  "site_remaining_group": {
+    "message": "其餘分組"
+  },
+  "site_group_deleted_save_failed": {
+    "message": "分組已刪除，網站已保留在{name}；暫時無法儲存網站所屬分組，請稍後重試。"
+  },
+  "site_group_deleted_moved": {
+    "message": "分組已刪除，其中的網站已移至{name}。"
+  },
+  "group_default_name": {
+    "message": "常用"
+  },
+  "group_migration_save_failed": {
+    "message": "分組已相容顯示，但暫時無法儲存升級後的設定，請稍後重試。"
+  },
+  "group_read_failed_preserved": {
+    "message": "暫時無法讀取網站分組，請重新載入後重試；網站資料不會被刪除。"
+  },
+  "group_icon_fallback": {
+    "message": "組"
+  },
+  "group_deleted_other_tab": {
+    "message": "該分組已在另一個標籤頁中刪除，請取消後重新操作。"
+  },
+  "group_last_cannot_delete": {
+    "message": "至少須保留一個分組，目前的分組無法刪除。"
+  },
+  "group_delete_help": {
+    "message": "刪除分組後，其中的網站會移至「{name}」，不會刪除內容。"
+  },
+  "group_selection_save_failed": {
+    "message": "暫時無法儲存分組選擇，請稍後重試。"
+  },
+  "group_settings_named": {
+    "message": "設定分組 {name}"
+  },
+  "group_deleted_select_another": {
+    "message": "該分組已被刪除，請選擇其他分組。"
+  },
+  "group_settings": {
+    "message": "分組設定"
+  },
+  "group_add": {
+    "message": "新增分組"
+  },
+  "group_save_action": {
+    "message": "儲存"
+  },
+  "group_add_action": {
+    "message": "新增"
+  },
+  "group_delete_unavailable": {
+    "message": "暫時無法刪除此分組，請取消後重新操作。"
+  },
+  "group_delete_confirm": {
+    "message": "刪除分組「{name}」？其中的網站會保留並移至「{destination}」。"
+  },
+  "group_last_recheck": {
+    "message": "至少須保留一個分組，目前無法刪除，請重新查看分組。"
+  },
+  "group_delete_failed": {
+    "message": "暫時無法刪除分組，網站和分組均已保留，請稍後重試。"
+  },
+  "group_name_invalid": {
+    "message": "請輸入 1 到 20 個字元的分組名稱。"
+  },
+  "group_symbol_too_long": {
+    "message": "文字圖示最多 8 個字元。"
+  },
+  "group_read_failed": {
+    "message": "暫時無法讀取分組，請重新載入後重試。"
+  },
+  "group_deleted_readd": {
+    "message": "該分組已被刪除，請取消後重新新增。"
+  },
+  "group_name_duplicate": {
+    "message": "已有同名分組，請使用其他名稱。"
+  },
+  "group_save_failed": {
+    "message": "暫時無法儲存分組，請稍後重試。"
+  },
+  "sidebar_expand": {
+    "message": "展開分組欄"
+  },
+  "sidebar_collapse": {
+    "message": "收合分組欄"
+  },
+  "menu_website_named": {
+    "message": "{name} 的網站選單"
+  },
+  "menu_open_named": {
+    "message": "開啟 {name}"
+  },
+  "menu_edit_named": {
+    "message": "編輯 {name}"
+  },
+  "menu_delete_named": {
+    "message": "刪除 {name}"
+  },
+  "ui_new_tab": {
+    "message": "新分頁"
+  },
+  "ui_group_sidebar_label": {
+    "message": "網站分組側邊欄"
+  },
+  "ui_groups": {
+    "message": "分組"
+  },
+  "ui_collapse_groups": {
+    "message": "收合分組側邊欄"
+  },
+  "ui_switch_groups": {
+    "message": "切換網站分組"
+  },
+  "ui_add_group": {
+    "message": "新增分組"
+  },
+  "ui_settings": {
+    "message": "設定"
+  },
+  "ui_time_date": {
+    "message": "時間和日期"
+  },
+  "ui_loading_date": {
+    "message": "正在取得日期…"
+  },
+  "ui_frequent_websites": {
+    "message": "常用網站"
+  },
+  "ui_empty_group": {
+    "message": "此分組還沒有網站。以滑鼠右鍵點擊空白處，即可新增常用網站。"
+  },
+  "ui_other_websites": {
+    "message": "其餘網站"
+  },
+  "ui_close": {
+    "message": "關閉"
+  },
+  "ui_overflow_help": {
+    "message": "超出網格容量的網站仍保存在這裡，並未刪除。可在此開啟、編輯或刪除網站。"
+  },
+  "ui_background_menu": {
+    "message": "背景選單"
+  },
+  "ui_add_icon": {
+    "message": "新增圖示"
+  },
+  "ui_change_wallpaper": {
+    "message": "更換桌布"
+  },
+  "ui_website_menu": {
+    "message": "網站選單"
+  },
+  "ui_website_actions_size": {
+    "message": "網站操作與圖示大小"
+  },
+  "ui_open": {
+    "message": "開啟"
+  },
+  "ui_edit": {
+    "message": "編輯"
+  },
+  "ui_size_normal": {
+    "message": "一般"
+  },
+  "ui_size_wide": {
+    "message": "橫向圖示"
+  },
+  "ui_size_tall": {
+    "message": "直向圖示"
+  },
+  "ui_size_large": {
+    "message": "大型圖示"
+  },
+  "ui_delete": {
+    "message": "刪除"
+  },
+  "ui_add_website": {
+    "message": "新增網站"
+  },
+  "ui_website_name": {
+    "message": "網站名稱"
+  },
+  "ui_website_address": {
+    "message": "網站網址"
+  },
+  "ui_website_address_help": {
+    "message": "支援 http:// 和 https://；省略通訊協定時預設使用 https://。"
+  },
+  "ui_website_icon": {
+    "message": "網站圖示"
+  },
+  "ui_fetch_icon": {
+    "message": "取得圖示"
+  },
+  "ui_default_icon": {
+    "message": "使用預設圖示"
+  },
+  "ui_website_icon_help": {
+    "message": "可依填寫的網址取得圖示，也可上傳圖片（最大 2 MiB）。取得時 Firefox 可能要求該網站的存取權限，儲存後生效。"
+  },
+  "ui_cancel": {
+    "message": "取消"
+  },
+  "ui_save": {
+    "message": "儲存"
+  },
+  "ui_group_name": {
+    "message": "分組名稱"
+  },
+  "ui_group_icon": {
+    "message": "分組圖示"
+  },
+  "ui_group_symbol_placeholder": {
+    "message": "例如 📁、⭐"
+  },
+  "ui_text_icon": {
+    "message": "使用文字圖示"
+  },
+  "ui_upload_group_icon": {
+    "message": "上傳分組圖示"
+  },
+  "ui_group_icon_help": {
+    "message": "可填寫表情符號或文字，也可上傳本機圖片，最大 2 MiB。"
+  },
+  "ui_delete_group": {
+    "message": "刪除分組"
+  },
+  "ui_add": {
+    "message": "新增"
+  },
+  "ui_personalization": {
+    "message": "個人化"
+  },
+  "ui_close_settings": {
+    "message": "關閉設定"
+  },
+  "ui_background": {
+    "message": "背景"
+  },
+  "ui_preset_wallpapers": {
+    "message": "預設桌布"
+  },
+  "ui_click_to_switch": {
+    "message": "點擊切換"
+  },
+  "ui_common_background_colors": {
+    "message": "常用背景色"
+  },
+  "ui_background_image": {
+    "message": "背景圖片"
+  },
+  "ui_background_image_help": {
+    "message": "選取後自動套用，最大 10 MiB，僅儲存在此瀏覽器中。"
+  },
+  "ui_reset_background": {
+    "message": "還原預設背景"
+  },
+  "ui_appearance": {
+    "message": "外觀"
+  },
+  "ui_theme": {
+    "message": "佈景主題"
+  },
+  "ui_dark": {
+    "message": "深色"
+  },
+  "ui_light": {
+    "message": "淺色"
+  },
+  "ui_follow_system": {
+    "message": "跟隨系統"
+  },
+  "ui_show_clock": {
+    "message": "顯示時鐘"
+  },
+  "ui_wallpaper_processing": {
+    "message": "請等待背景處理完成後再選擇桌布。"
+  },
+  "ui_group_full": {
+    "message": "目前分組的 {count} 個基本格已滿，請先騰出空間。"
+  },
+  "ui_add_website_icon": {
+    "message": "新增網站圖示"
+  },
+  "image_invalid_size": {
+    "message": "請選擇不超過 2 MiB 的有效圖片。"
+  },
+  "image_unsupported_type": {
+    "message": "請選擇 PNG、JPEG、WebP、GIF、AVIF 或 ICO 圖片。"
+  },
+  "image_create_failed": {
+    "message": "無法從這張圖片產生圖示，請選擇其他圖片。"
+  },
+  "fetch_resource_too_large": {
+    "message": "圖示資源超過大小限制。"
+  },
+  "fetch_empty_content": {
+    "message": "網站傳回了空白內容。"
+  },
+  "fetch_aborted": {
+    "message": "圖示請求已中止。"
+  },
+  "fetch_unavailable": {
+    "message": "網站目前無法提供圖示。"
+  },
+  "fetch_unsupported_url": {
+    "message": "網站傳回了不支援的網址。"
+  },
+  "fetch_invalid_website_url": {
+    "message": "請先輸入有效的 HTTP 或 HTTPS 網址。"
+  },
+  "fetch_permission_unavailable": {
+    "message": "瀏覽器目前無法請求網站存取權限，請上傳本機圖示。"
+  },
+  "fetch_permission_failed": {
+    "message": "無法請求網站存取權限，請重試或上傳本機圖示。"
+  },
+  "fetch_permission_denied": {
+    "message": "未取得此網站的存取權限，無法擷取圖示。你仍可上傳本機圖示。"
+  },
+  "fetch_timeout": {
+    "message": "擷取圖示逾時。"
+  },
+  "fetch_timeout_retry": {
+    "message": "擷取圖示逾時，請稍後重試或上傳本機圖示。"
+  },
+  "fetch_no_icon": {
+    "message": "未能擷取可用的圖示，請檢查網址、稍後重試或上傳本機圖片。"
+  },
+  "layout_grid_full": {
+    "message": "目前群組的 10×6 網格沒有足夠的可用位置。"
+  },
+  "layout_mobile_failed": {
+    "message": "目前無法排列行動版圖示。"
+  },
+  "grid_drop_no_space": {
+    "message": "目標位置沒有足夠的空位，已保留原位置。"
+  },
+  "extension_name": {
+    "message": "簡潔新分頁"
+  },
+  "extension_description": {
+    "message": "具有本機時鐘、自訂背景及常用網站捷徑的簡潔 Firefox 新分頁。"
+  },
+  "background_storage_access_error": {
+    "message": "暫時無法存取本機背景儲存空間，請稍後再試。"
+  },
+  "background_storage_blocked_error": {
+    "message": "其他頁面正在使用背景儲存空間，請關閉舊分頁後再試。"
+  },
+  "background_storage_save_error": {
+    "message": "背景設定無法儲存至本機，請稍後再試。"
+  },
+  "background_image_format_error": {
+    "message": "請選擇 PNG、JPEG、WebP、GIF 或 AVIF 格式的圖片。"
+  },
+  "background_empty_image_error": {
+    "message": "這張圖片是空白檔案，請選擇其他圖片。"
+  },
+  "background_image_size_error": {
+    "message": "圖片大小不可超過 10 MiB，請選擇較小的圖片。"
+  },
+  "background_image_decode_error": {
+    "message": "這張圖片無法正常開啟，請選擇其他圖片。"
+  },
+  "background_preset_unavailable": {
+    "message": "這張預設桌布無法使用，請重新選擇。"
+  },
+  "background_update_error": {
+    "message": "暫時無法更新背景，請稍後再試。"
+  },
+  "background_saving_color": {
+    "message": "正在儲存純色背景…"
+  },
+  "background_saved_color": {
+    "message": "純色背景已套用並儲存。"
+  },
+  "background_wallpaper_label": {
+    "message": "選擇背景圖片，第 {index} 項"
+  },
+  "background_saving_wallpaper": {
+    "message": "正在儲存圖片桌布…"
+  },
+  "background_saved_wallpaper": {
+    "message": "圖片桌布已套用並儲存。"
+  },
+  "background_saving_image": {
+    "message": "正在讀取並儲存背景圖片…"
+  },
+  "background_saved_image": {
+    "message": "背景圖片已套用並儲存。"
+  },
+  "background_restoring": {
+    "message": "正在還原預設背景…"
+  },
+  "background_restored": {
+    "message": "已還原預設背景。"
+  },
+  "background_saved_invalid": {
+    "message": "已儲存的背景設定無效。"
+  },
+  "background_load_error": {
+    "message": "暫時無法讀取已儲存的背景，目前使用預設背景。可重新設定背景或還原預設值。"
+  },
+  "color_snow_white": {
+    "message": "雪白"
+  },
+  "color_ivory": {
+    "message": "象牙白"
+  },
+  "color_fog_gray": {
+    "message": "霧灰"
+  },
+  "color_silver_gray": {
+    "message": "銀灰"
+  },
+  "color_limestone_gray": {
+    "message": "石灰"
+  },
+  "color_slate_gray": {
+    "message": "岩灰"
+  },
+  "color_charcoal_gray": {
+    "message": "炭灰"
+  },
+  "color_ink_black": {
+    "message": "墨黑"
+  },
+  "color_cherry_red": {
+    "message": "櫻桃紅"
+  },
+  "color_coral_red": {
+    "message": "珊瑚紅"
+  },
+  "color_rose_red": {
+    "message": "玫瑰紅"
+  },
+  "color_orange_red": {
+    "message": "橘紅"
+  },
+  "color_apricot": {
+    "message": "杏橙"
+  },
+  "color_amber": {
+    "message": "琥珀"
+  },
+  "color_golden_yellow": {
+    "message": "金黃"
+  },
+  "color_warm_brown": {
+    "message": "暖棕"
+  },
+  "color_terracotta": {
+    "message": "陶土"
+  },
+  "color_cinnamon": {
+    "message": "肉桂"
+  },
+  "color_grass_green": {
+    "message": "草綠"
+  },
+  "color_leaf_green": {
+    "message": "葉綠"
+  },
+  "color_emerald": {
+    "message": "翡翠"
+  },
+  "color_teal": {
+    "message": "青綠"
+  },
+  "color_lake_cyan": {
+    "message": "湖青"
+  },
+  "color_sky_blue": {
+    "message": "天藍"
+  },
+  "color_azure_blue": {
+    "message": "湛藍"
+  },
+  "color_indigo": {
+    "message": "靛藍"
+  },
+  "color_violet": {
+    "message": "紫羅蘭"
+  },
+  "color_orchid_purple": {
+    "message": "蘭紫"
+  },
+  "color_magenta": {
+    "message": "洋紅"
+  },
+  "color_berry_purple": {
+    "message": "莓紫"
+  },
+  "color_cream": {
+    "message": "奶油"
+  },
+  "color_peach": {
+    "message": "蜜桃"
+  },
+  "color_light_coral": {
+    "message": "淺珊瑚"
+  },
+  "color_pale_pink": {
+    "message": "淺粉"
+  },
+  "color_pale_purple": {
+    "message": "淡紫"
+  },
+  "color_lavender": {
+    "message": "薰衣草"
+  },
+  "color_ice_blue": {
+    "message": "冰藍"
+  },
+  "color_light_cyan": {
+    "message": "淺青"
+  },
+  "color_mint": {
+    "message": "薄荷"
+  },
+  "color_light_green": {
+    "message": "淺綠"
+  },
+  "color_deep_sea_blue": {
+    "message": "深海藍"
+  },
+  "color_midnight_blue": {
+    "message": "午夜藍"
+  },
+  "color_dark_indigo": {
+    "message": "暗靛"
+  },
+  "color_dark_purple": {
+    "message": "深紫"
+  },
+  "color_forest_green": {
+    "message": "墨綠"
+  },
+  "color_dark_teal": {
+    "message": "深青"
+  },
+  "color_wine_red": {
+    "message": "酒紅"
+  },
+  "color_espresso": {
+    "message": "濃咖"
+  }
+}

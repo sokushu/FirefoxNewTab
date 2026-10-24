@@ -1,0 +1,698 @@
+{
+  "site_address_required": {
+    "message": "Introduza o endereço de um site."
+  },
+  "site_address_invalid": {
+    "message": "Introduza um endereço de site válido, como https://example.com."
+  },
+  "site_address_http_only": {
+    "message": "O endereço do site tem de usar http:// ou https://."
+  },
+  "site_icon_fallback": {
+    "message": "S"
+  },
+  "site_icon_fetch": {
+    "message": "Obter ícone"
+  },
+  "site_migration_save_failed": {
+    "message": "Os seus sites continuam nesta página, mas não foi possível guardar os dados migrados. Volte a tentar mais tarde."
+  },
+  "site_invalid_saved_entries": {
+    "message": "Alguns sites guardados tinham informações inválidas e foram ignorados."
+  },
+  "site_read_extension_failed": {
+    "message": "Não foi possível ler os sites guardados. Recarregue a extensão e volte a tentar."
+  },
+  "site_read_reload_failed": {
+    "message": "Não foi possível ler os sites guardados. Recarregue a página e volte a tentar."
+  },
+  "site_arrange_failed": {
+    "message": "Não foi possível organizar os sites. Recarregue a página e volte a tentar."
+  },
+  "site_overflow_capacity": {
+    "message": "Este grupo já tem mais sites do que cabem na grelha. Primeiro elimine um site ou reduza o tamanho de um ícone."
+  },
+  "site_capacity_full": {
+    "message": "As 60 células base deste grupo estão ocupadas. Primeiro elimine um site ou reduza o tamanho de um ícone."
+  },
+  "site_grid_layout_failed": {
+    "message": "Não foi possível organizar a grelha. Os seus sites foram preservados; recarregue a página mais tarde."
+  },
+  "site_grid_save_failed": {
+    "message": "Não foi possível guardar as posições da grelha. Volte a tentar mais tarde."
+  },
+  "site_read_retry_failed": {
+    "message": "Não foi possível ler os sites guardados. Volte a tentar mais tarde."
+  },
+  "site_edit": {
+    "message": "Editar site"
+  },
+  "site_add": {
+    "message": "Adicionar site"
+  },
+  "site_delete_confirm": {
+    "message": "Eliminar o atalho para «{name}»?"
+  },
+  "site_delete_read_failed": {
+    "message": "Não foi possível ler os sites guardados. Nada foi eliminado."
+  },
+  "site_delete_save_failed": {
+    "message": "Não foi possível guardar as alterações. Nada foi eliminado. Volte a tentar mais tarde."
+  },
+  "site_deleted": {
+    "message": "Atalho do site eliminado."
+  },
+  "site_resize_read_failed": {
+    "message": "Não foi possível ler os sites guardados. O tamanho original foi preservado."
+  },
+  "site_resize_no_space": {
+    "message": "Este grupo não tem espaço suficiente. O tamanho original do ícone foi preservado. Primeiro elimine um site ou reduza o tamanho de um ícone."
+  },
+  "site_resize_failed": {
+    "message": "Não foi possível redimensionar o ícone. O tamanho original foi preservado."
+  },
+  "site_resize_save_failed": {
+    "message": "Não foi possível guardar o tamanho do ícone. O tamanho original foi preservado. Volte a tentar mais tarde."
+  },
+  "site_overflow_count": {
+    "message": "Outros sites ({count})"
+  },
+  "site_edit_action": {
+    "message": "Editar"
+  },
+  "site_edit_named": {
+    "message": "Editar {name}"
+  },
+  "site_delete_action": {
+    "message": "Eliminar"
+  },
+  "site_delete_named": {
+    "message": "Eliminar {name}"
+  },
+  "site_rearrange_save_failed": {
+    "message": "Os seus sites foram preservados, mas não foi possível guardar as novas posições."
+  },
+  "site_grid_overflow_failed": {
+    "message": "Não foi possível organizar a grelha. Pode continuar a gerir os seus sites em «Outros sites»."
+  },
+  "site_icon_fetch_unavailable": {
+    "message": "A obtenção de ícones está indisponível. Volte a tentar mais tarde ou carregue uma imagem."
+  },
+  "site_icon_fetching": {
+    "message": "A obter…"
+  },
+  "site_icon_fetch_invalid": {
+    "message": "Não foi possível obter um ícone válido do site. Experimente carregar uma imagem."
+  },
+  "site_icon_fetch_failed": {
+    "message": "Não foi possível obter o ícone do site. Volte a tentar mais tarde."
+  },
+  "site_name_invalid": {
+    "message": "Introduza um nome de site com 1 a 50 caracteres."
+  },
+  "site_deleted_elsewhere": {
+    "message": "Este site foi eliminado. Cancele e adicione-o novamente."
+  },
+  "site_save_failed": {
+    "message": "Não foi possível guardar o site. Volte a tentar mais tarde."
+  },
+  "site_saved": {
+    "message": "Alterações do site guardadas."
+  },
+  "site_added": {
+    "message": "Atalho do site adicionado."
+  },
+  "site_move_read_failed": {
+    "message": "Não foi possível ler os sites guardados. A posição original foi preservada."
+  },
+  "site_move_failed": {
+    "message": "Não foi possível mover este item. Volte a tentar mais tarde."
+  },
+  "site_move_overflow": {
+    "message": "Este site já está em Outros sites. A posição original foi preservada."
+  },
+  "site_move_group_full": {
+    "message": "O grupo de destino não tem espaço suficiente. O site permanece no grupo original."
+  },
+  "site_move_no_space": {
+    "message": "O ícone atual não cabe nessa posição. A posição original foi preservada."
+  },
+  "site_move_save_failed": {
+    "message": "Não foi possível guardar a deslocação. A posição original foi restaurada."
+  },
+  "site_move_saved": {
+    "message": "Nova posição guardada."
+  },
+  "site_named_group": {
+    "message": "«{name}»"
+  },
+  "site_remaining_group": {
+    "message": "o grupo restante"
+  },
+  "site_group_deleted_save_failed": {
+    "message": "O grupo foi eliminado e os seus sites foram preservados. Grupo de destino: {name}. Não foi possível guardar a associação ao grupo. Volte a tentar mais tarde."
+  },
+  "site_group_deleted_moved": {
+    "message": "O grupo foi eliminado e os seus sites foram movidos para {name}."
+  },
+  "group_default_name": {
+    "message": "Favoritos"
+  },
+  "group_migration_save_failed": {
+    "message": "Os seus grupos são apresentados, mas não foi possível guardar as definições atualizadas. Volte a tentar mais tarde."
+  },
+  "group_read_failed_preserved": {
+    "message": "Não foi possível ler os grupos de sites. Recarregue a página e volte a tentar. Os dados dos sites não serão eliminados."
+  },
+  "group_icon_fallback": {
+    "message": "G"
+  },
+  "group_deleted_other_tab": {
+    "message": "Este grupo foi eliminado noutro separador. Cancele e volte a tentar."
+  },
+  "group_last_cannot_delete": {
+    "message": "É necessário manter pelo menos um grupo. Este grupo não pode ser eliminado."
+  },
+  "group_delete_help": {
+    "message": "Ao eliminar este grupo, os seus sites serão movidos para «{name}». Nenhum conteúdo será eliminado."
+  },
+  "group_selection_save_failed": {
+    "message": "Não foi possível guardar a seleção do grupo. Volte a tentar mais tarde."
+  },
+  "group_settings_named": {
+    "message": "Definições do grupo {name}"
+  },
+  "group_deleted_select_another": {
+    "message": "Este grupo foi eliminado. Selecione outro grupo."
+  },
+  "group_settings": {
+    "message": "Definições do grupo"
+  },
+  "group_add": {
+    "message": "Adicionar grupo"
+  },
+  "group_save_action": {
+    "message": "Guardar"
+  },
+  "group_add_action": {
+    "message": "Adicionar"
+  },
+  "group_delete_unavailable": {
+    "message": "Não é possível eliminar este grupo neste momento. Cancele e volte a tentar."
+  },
+  "group_delete_confirm": {
+    "message": "Eliminar o grupo «{name}»? Os seus sites serão preservados e movidos para «{destination}»."
+  },
+  "group_last_recheck": {
+    "message": "É necessário manter pelo menos um grupo. Não é possível eliminar agora; verifique novamente os seus grupos."
+  },
+  "group_delete_failed": {
+    "message": "Não foi possível eliminar o grupo. Os seus sites e grupos foram preservados. Volte a tentar mais tarde."
+  },
+  "group_name_invalid": {
+    "message": "Introduza um nome de grupo com 1 a 20 caracteres."
+  },
+  "group_symbol_too_long": {
+    "message": "Um ícone de texto pode ter até 8 caracteres."
+  },
+  "group_read_failed": {
+    "message": "Não foi possível ler os grupos. Recarregue a página e volte a tentar."
+  },
+  "group_deleted_readd": {
+    "message": "Este grupo foi eliminado. Cancele e adicione-o novamente."
+  },
+  "group_name_duplicate": {
+    "message": "Já existe um grupo com esse nome. Utilize outro nome."
+  },
+  "group_save_failed": {
+    "message": "Não foi possível guardar o grupo. Volte a tentar mais tarde."
+  },
+  "sidebar_expand": {
+    "message": "Expandir barra de grupos"
+  },
+  "sidebar_collapse": {
+    "message": "Recolher barra de grupos"
+  },
+  "menu_website_named": {
+    "message": "Menu do site {name}"
+  },
+  "menu_open_named": {
+    "message": "Abrir {name}"
+  },
+  "menu_edit_named": {
+    "message": "Editar {name}"
+  },
+  "menu_delete_named": {
+    "message": "Eliminar {name}"
+  },
+  "ui_new_tab": {
+    "message": "Novo separador"
+  },
+  "ui_group_sidebar_label": {
+    "message": "Barra lateral de grupos de sites"
+  },
+  "ui_groups": {
+    "message": "Grupos"
+  },
+  "ui_collapse_groups": {
+    "message": "Recolher a barra de grupos"
+  },
+  "ui_switch_groups": {
+    "message": "Mudar de grupo de sites"
+  },
+  "ui_add_group": {
+    "message": "Adicionar grupo"
+  },
+  "ui_settings": {
+    "message": "Definições"
+  },
+  "ui_time_date": {
+    "message": "Hora e data"
+  },
+  "ui_loading_date": {
+    "message": "A carregar a data…"
+  },
+  "ui_frequent_websites": {
+    "message": "Sites frequentes"
+  },
+  "ui_empty_group": {
+    "message": "Este grupo ainda não tem sites. Clique com o botão direito numa área vazia para adicionar os seus sites frequentes."
+  },
+  "ui_other_websites": {
+    "message": "Outros sites"
+  },
+  "ui_close": {
+    "message": "Fechar"
+  },
+  "ui_overflow_help": {
+    "message": "Os sites que excedem a capacidade da grelha são mantidos aqui e não foram eliminados. Pode abri-los, editá-los ou eliminá-los aqui."
+  },
+  "ui_background_menu": {
+    "message": "Menu de fundo"
+  },
+  "ui_add_icon": {
+    "message": "Adicionar ícone"
+  },
+  "ui_change_wallpaper": {
+    "message": "Alterar fundo de ecrã"
+  },
+  "ui_website_menu": {
+    "message": "Menu do site"
+  },
+  "ui_website_actions_size": {
+    "message": "Ações do site e tamanho do ícone"
+  },
+  "ui_open": {
+    "message": "Abrir"
+  },
+  "ui_edit": {
+    "message": "Editar"
+  },
+  "ui_size_normal": {
+    "message": "Normal"
+  },
+  "ui_size_wide": {
+    "message": "Ícone largo"
+  },
+  "ui_size_tall": {
+    "message": "Ícone alto"
+  },
+  "ui_size_large": {
+    "message": "Ícone grande"
+  },
+  "ui_delete": {
+    "message": "Eliminar"
+  },
+  "ui_add_website": {
+    "message": "Adicionar site"
+  },
+  "ui_website_name": {
+    "message": "Nome do site"
+  },
+  "ui_website_address": {
+    "message": "Endereço do site"
+  },
+  "ui_website_address_help": {
+    "message": "Suporta http:// e https://. Se o protocolo for omitido, é utilizado https://."
+  },
+  "ui_website_icon": {
+    "message": "Ícone do site"
+  },
+  "ui_fetch_icon": {
+    "message": "Obter ícone"
+  },
+  "ui_default_icon": {
+    "message": "Utilizar ícone predefinido"
+  },
+  "ui_website_icon_help": {
+    "message": "Obtenha um ícone do endereço introduzido ou carregue uma imagem (até 2 MiB). Ao obter o ícone, o Firefox poderá pedir permissão para aceder ao site. As alterações são aplicadas após guardar."
+  },
+  "ui_cancel": {
+    "message": "Cancelar"
+  },
+  "ui_save": {
+    "message": "Guardar"
+  },
+  "ui_group_name": {
+    "message": "Nome do grupo"
+  },
+  "ui_group_icon": {
+    "message": "Ícone do grupo"
+  },
+  "ui_group_symbol_placeholder": {
+    "message": "Por exemplo, 📁, ⭐"
+  },
+  "ui_text_icon": {
+    "message": "Utilizar ícone de texto"
+  },
+  "ui_upload_group_icon": {
+    "message": "Carregar ícone do grupo"
+  },
+  "ui_group_icon_help": {
+    "message": "Introduza um emoji ou texto, ou carregue uma imagem local até 2 MiB."
+  },
+  "ui_delete_group": {
+    "message": "Eliminar grupo"
+  },
+  "ui_add": {
+    "message": "Adicionar"
+  },
+  "ui_personalization": {
+    "message": "Personalização"
+  },
+  "ui_close_settings": {
+    "message": "Fechar definições"
+  },
+  "ui_background": {
+    "message": "Fundo"
+  },
+  "ui_preset_wallpapers": {
+    "message": "Fundos de ecrã predefinidos"
+  },
+  "ui_click_to_switch": {
+    "message": "Clique para mudar"
+  },
+  "ui_common_background_colors": {
+    "message": "Cores de fundo comuns"
+  },
+  "ui_background_image": {
+    "message": "Imagem de fundo"
+  },
+  "ui_background_image_help": {
+    "message": "Aplicada automaticamente após a seleção, até 10 MiB. Guardada apenas neste navegador."
+  },
+  "ui_reset_background": {
+    "message": "Restaurar fundo predefinido"
+  },
+  "ui_appearance": {
+    "message": "Aparência"
+  },
+  "ui_theme": {
+    "message": "Tema"
+  },
+  "ui_dark": {
+    "message": "Escuro"
+  },
+  "ui_light": {
+    "message": "Claro"
+  },
+  "ui_follow_system": {
+    "message": "Seguir o sistema"
+  },
+  "ui_show_clock": {
+    "message": "Mostrar relógio"
+  },
+  "ui_wallpaper_processing": {
+    "message": "Aguarde a conclusão do processamento do fundo antes de escolher um fundo de ecrã."
+  },
+  "ui_group_full": {
+    "message": "As {count} células básicas deste grupo estão ocupadas. Liberte espaço primeiro."
+  },
+  "ui_add_website_icon": {
+    "message": "Adicionar ícone de site"
+  },
+  "image_invalid_size": {
+    "message": "Selecione uma imagem válida com um máximo de 2 MiB."
+  },
+  "image_unsupported_type": {
+    "message": "Selecione uma imagem PNG, JPEG, WebP, GIF, AVIF ou ICO."
+  },
+  "image_create_failed": {
+    "message": "Não foi possível criar um ícone a partir desta imagem. Selecione outra imagem."
+  },
+  "fetch_resource_too_large": {
+    "message": "O recurso do ícone excede o limite de tamanho."
+  },
+  "fetch_empty_content": {
+    "message": "O sítio web devolveu conteúdo vazio."
+  },
+  "fetch_aborted": {
+    "message": "O pedido do ícone foi cancelado."
+  },
+  "fetch_unavailable": {
+    "message": "O sítio web não pode fornecer um ícone de momento."
+  },
+  "fetch_unsupported_url": {
+    "message": "O sítio web devolveu um endereço não suportado."
+  },
+  "fetch_invalid_website_url": {
+    "message": "Introduza primeiro um endereço de sítio web HTTP ou HTTPS válido."
+  },
+  "fetch_permission_unavailable": {
+    "message": "O navegador não pode pedir acesso ao sítio web de momento. Carregue um ícone local."
+  },
+  "fetch_permission_failed": {
+    "message": "Não foi possível pedir acesso ao sítio web. Tente novamente ou carregue um ícone local."
+  },
+  "fetch_permission_denied": {
+    "message": "Não é possível obter o ícone sem permissão para aceder a este sítio web. Pode carregar um ícone local."
+  },
+  "fetch_timeout": {
+    "message": "O tempo limite para obter o ícone foi excedido."
+  },
+  "fetch_timeout_retry": {
+    "message": "O tempo limite para obter o ícone foi excedido. Tente mais tarde ou carregue um ícone local."
+  },
+  "fetch_no_icon": {
+    "message": "Não foi possível obter um ícone utilizável. Verifique o endereço, tente mais tarde ou carregue uma imagem local."
+  },
+  "layout_grid_full": {
+    "message": "Não há espaço suficiente na grelha de 10×6 deste grupo."
+  },
+  "layout_mobile_failed": {
+    "message": "Não é possível organizar os ícones para dispositivos móveis de momento."
+  },
+  "grid_drop_no_space": {
+    "message": "Não há espaço suficiente no destino. A posição original foi mantida."
+  },
+  "extension_name": {
+    "message": "Novo separador simples"
+  },
+  "extension_description": {
+    "message": "Um novo separador simples do Firefox com relógio de hora local, fundos personalizados e atalhos para sites frequentes."
+  },
+  "background_storage_access_error": {
+    "message": "O armazenamento local de fundo está temporariamente indisponível. Tente novamente mais tarde."
+  },
+  "background_storage_blocked_error": {
+    "message": "O armazenamento de fundo está a ser utilizado por outra página. Feche os separadores antigos e tente novamente."
+  },
+  "background_storage_save_error": {
+    "message": "Não foi possível guardar as definições de fundo localmente. Tente novamente mais tarde."
+  },
+  "background_image_format_error": {
+    "message": "Escolha uma imagem PNG, JPEG, WebP, GIF ou AVIF."
+  },
+  "background_empty_image_error": {
+    "message": "Esta imagem é um ficheiro vazio. Escolha outra imagem."
+  },
+  "background_image_size_error": {
+    "message": "A imagem não pode ter mais de 10 MiB. Escolha uma imagem mais pequena."
+  },
+  "background_image_decode_error": {
+    "message": "Não foi possível abrir esta imagem. Escolha outra imagem."
+  },
+  "background_preset_unavailable": {
+    "message": "Este fundo de ecrã predefinido não está disponível. Escolha outro."
+  },
+  "background_update_error": {
+    "message": "Não foi possível atualizar o fundo de momento. Tente novamente mais tarde."
+  },
+  "background_saving_color": {
+    "message": "A guardar o fundo de cor sólida…"
+  },
+  "background_saved_color": {
+    "message": "Fundo de cor sólida aplicado e guardado."
+  },
+  "background_wallpaper_label": {
+    "message": "Selecionar imagem de fundo, opção {index}"
+  },
+  "background_saving_wallpaper": {
+    "message": "A guardar o fundo de ecrã…"
+  },
+  "background_saved_wallpaper": {
+    "message": "Fundo de ecrã aplicado e guardado."
+  },
+  "background_saving_image": {
+    "message": "A ler e a guardar a imagem de fundo…"
+  },
+  "background_saved_image": {
+    "message": "Imagem de fundo aplicada e guardada."
+  },
+  "background_restoring": {
+    "message": "A restaurar o fundo predefinido…"
+  },
+  "background_restored": {
+    "message": "Fundo predefinido restaurado."
+  },
+  "background_saved_invalid": {
+    "message": "As definições de fundo guardadas são inválidas."
+  },
+  "background_load_error": {
+    "message": "Não foi possível ler o fundo guardado de momento, pelo que está a ser utilizado o fundo predefinido. Pode configurar novamente o fundo ou restaurar o predefinido."
+  },
+  "color_snow_white": {
+    "message": "Branco neve"
+  },
+  "color_ivory": {
+    "message": "Marfim"
+  },
+  "color_fog_gray": {
+    "message": "Cinzento nevoeiro"
+  },
+  "color_silver_gray": {
+    "message": "Cinzento-prateado"
+  },
+  "color_limestone_gray": {
+    "message": "Cinzento calcário"
+  },
+  "color_slate_gray": {
+    "message": "Cinzento ardósia"
+  },
+  "color_charcoal_gray": {
+    "message": "Cinzento-carvão"
+  },
+  "color_ink_black": {
+    "message": "Preto de tinta"
+  },
+  "color_cherry_red": {
+    "message": "Vermelho-cereja"
+  },
+  "color_coral_red": {
+    "message": "Vermelho-coral"
+  },
+  "color_rose_red": {
+    "message": "Vermelho-rosa"
+  },
+  "color_orange_red": {
+    "message": "Vermelho alaranjado"
+  },
+  "color_apricot": {
+    "message": "Damasco"
+  },
+  "color_amber": {
+    "message": "Âmbar"
+  },
+  "color_golden_yellow": {
+    "message": "Amarelo-dourado"
+  },
+  "color_warm_brown": {
+    "message": "Castanho quente"
+  },
+  "color_terracotta": {
+    "message": "Terracota"
+  },
+  "color_cinnamon": {
+    "message": "Canela"
+  },
+  "color_grass_green": {
+    "message": "Verde-relva"
+  },
+  "color_leaf_green": {
+    "message": "Verde-folha"
+  },
+  "color_emerald": {
+    "message": "Esmeralda"
+  },
+  "color_teal": {
+    "message": "Verde-azulado"
+  },
+  "color_lake_cyan": {
+    "message": "Azul-lago"
+  },
+  "color_sky_blue": {
+    "message": "Azul-céu"
+  },
+  "color_azure_blue": {
+    "message": "Azul intenso"
+  },
+  "color_indigo": {
+    "message": "Índigo"
+  },
+  "color_violet": {
+    "message": "Violeta"
+  },
+  "color_orchid_purple": {
+    "message": "Roxo-orquídea"
+  },
+  "color_magenta": {
+    "message": "Magenta"
+  },
+  "color_berry_purple": {
+    "message": "Roxo de bagas"
+  },
+  "color_cream": {
+    "message": "Creme"
+  },
+  "color_peach": {
+    "message": "Pêssego"
+  },
+  "color_light_coral": {
+    "message": "Coral claro"
+  },
+  "color_pale_pink": {
+    "message": "Rosa-claro"
+  },
+  "color_pale_purple": {
+    "message": "Lilás-claro"
+  },
+  "color_lavender": {
+    "message": "Lavanda"
+  },
+  "color_ice_blue": {
+    "message": "Azul-gelo"
+  },
+  "color_light_cyan": {
+    "message": "Ciano-claro"
+  },
+  "color_mint": {
+    "message": "Menta"
+  },
+  "color_light_green": {
+    "message": "Verde-claro"
+  },
+  "color_deep_sea_blue": {
+    "message": "Azul do mar profundo"
+  },
+  "color_midnight_blue": {
+    "message": "Azul meia-noite"
+  },
+  "color_dark_indigo": {
+    "message": "Índigo-escuro"
+  },
+  "color_dark_purple": {
+    "message": "Roxo-escuro"
+  },
+  "color_forest_green": {
+    "message": "Verde-floresta"
+  },
+  "color_dark_teal": {
+    "message": "Verde-azulado escuro"
+  },
+  "color_wine_red": {
+    "message": "Vermelho-vinho"
+  },
+  "color_espresso": {
+    "message": "Café expresso"
+  }
+}

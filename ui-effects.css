@@ -1,0 +1,254 @@
+/* Animate leaf elements so menus and the drawer keep their positioning. */
+.shortcut-page-viewport {
+  position: relative;
+  min-width: 0;
+}
+
+.shortcut-page-transition-overlay {
+  position: fixed;
+  z-index: 3;
+  overflow: hidden;
+  overflow: clip;
+  pointer-events: none;
+  user-select: none;
+  contain: layout paint;
+}
+
+.shortcut-page-transition-panel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  overflow: clip;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.shortcut-page-transition-panel > .shortcut-page-snapshot {
+  position: absolute;
+  margin: 0;
+  transform: none;
+  translate: none;
+  visibility: visible;
+  pointer-events: none;
+}
+
+.shortcut-tile-motion-active .shortcut-link .shortcut-icon {
+  transform: none !important;
+  transition: none !important;
+}
+
+.shortcut-tile-motion-active .shortcut-item > .shortcut-link > .shortcut-icon.shortcut-tile-motion-resize {
+  max-width: none;
+}
+
+.shortcut-link .shortcut-icon {
+  transition:
+    transform 190ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 190ms ease,
+    box-shadow 190ms ease;
+}
+
+#settings-button > span {
+  display: inline-block;
+  transition: transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+#settings-button[aria-expanded="true"] > span {
+  transform: rotate(65deg);
+}
+
+.background-image-preset {
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+.background-image-preview img {
+  transition: transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.background-color-swatch {
+  transition:
+    transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 160ms ease;
+}
+
+.shortcut-link:focus-visible .shortcut-icon {
+  transform: translateY(-2px);
+}
+
+#settings-button:focus-visible > span {
+  transform: rotate(30deg);
+}
+
+.background-image-preset:focus-visible {
+  outline-offset: -2px;
+}
+
+.background-color-swatch:focus-visible {
+  outline-offset: 3px;
+}
+
+.settings-toggle input {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.settings-toggle input::before {
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.theme-options label {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .shortcut-link:not(:disabled):hover .shortcut-icon {
+    transform: translateY(-3px);
+  }
+
+  #settings-button:hover > span {
+    transform: rotate(35deg);
+  }
+
+  .background-image-preset:not(:disabled):hover {
+    transform: translateY(-2px);
+  }
+
+  .background-image-preset:not(:disabled):hover .background-image-preview img {
+    transform: scale(1.035);
+  }
+
+  .background-color-swatch:not(:disabled):hover {
+    transform: translateY(-1px) scale(1.04);
+  }
+}
+
+.shortcut-link:not(:disabled):active .shortcut-icon {
+  transform: scale(0.96);
+}
+
+#settings-button:active > span {
+  transform: rotate(55deg) scale(0.94);
+}
+
+.background-image-preset:not(:disabled):active {
+  transform: scale(0.985);
+}
+
+.background-color-swatch:not(:disabled):active {
+  transform: scale(0.94);
+}
+
+.background-color-swatch[aria-pressed="true"]::after {
+  animation: ui-effects-color-check 220ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.background-image-preset[aria-pressed="true"]::after {
+  animation: ui-effects-wallpaper-check 200ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.shortcut-dialog[open] {
+  animation: ui-effects-fade-in 180ms ease-out both;
+}
+
+.shortcut-dialog[open]::backdrop {
+  animation: ui-effects-fade-in 160ms ease-out both;
+}
+
+#settings-panel.is-open:not(.is-closing) > .settings-body > .background-content,
+#settings-panel.is-open:not(.is-closing) > .settings-body > .settings-section {
+  animation: ui-effects-fade-in 240ms ease-out both;
+}
+
+#settings-panel.is-open:not(.is-closing) > .settings-body > section + section {
+  animation-delay: 35ms;
+}
+
+@keyframes ui-effects-color-check {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  65% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes ui-effects-wallpaper-check {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ui-effects-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shortcut-tile-motion-active > .shortcut-item,
+  .shortcut-tile-motion-active .shortcut-icon,
+  .shortcut-tile-motion-active .shortcut-name,
+  .shortcut-tile-motion-active .shortcut-menu-wrap {
+    translate: none !important;
+  }
+
+  .shortcut-page-transition-overlay {
+    display: none;
+  }
+
+  .shortcut-link .shortcut-icon,
+  #settings-button > span,
+  .background-image-preset,
+  .background-image-preview img,
+  .background-color-swatch {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .background-color-swatch[aria-pressed="true"]::after,
+  .background-image-preset[aria-pressed="true"]::after,
+  .shortcut-dialog[open],
+  .shortcut-dialog[open]::backdrop,
+  #settings-panel.is-open:not(.is-closing) > .settings-body > .background-content,
+  #settings-panel.is-open:not(.is-closing) > .settings-body > .settings-section {
+    animation: none !important;
+  }
+
+  .settings-toggle input,
+  .settings-toggle input::before,
+  .theme-options label {
+    transition: none !important;
+  }
+}

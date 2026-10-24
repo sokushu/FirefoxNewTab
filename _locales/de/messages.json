@@ -1,0 +1,698 @@
+{
+  "site_address_required": {
+    "message": "Geben Sie eine Website-Adresse ein."
+  },
+  "site_address_invalid": {
+    "message": "Geben Sie eine gültige Website-Adresse ein, z. B. https://example.com."
+  },
+  "site_address_http_only": {
+    "message": "Website-Adressen müssen http:// oder https:// verwenden."
+  },
+  "site_icon_fallback": {
+    "message": "W"
+  },
+  "site_icon_fetch": {
+    "message": "Symbol abrufen"
+  },
+  "site_migration_save_failed": {
+    "message": "Ihre Websites bleiben auf dieser Seite erhalten, aber die migrierten Daten konnten nicht gespeichert werden. Versuchen Sie es später erneut."
+  },
+  "site_invalid_saved_entries": {
+    "message": "Einige gespeicherte Website-Einträge waren ungültig und wurden übersprungen."
+  },
+  "site_read_extension_failed": {
+    "message": "Gespeicherte Websites konnten nicht gelesen werden. Laden Sie die Erweiterung neu und versuchen Sie es erneut."
+  },
+  "site_read_reload_failed": {
+    "message": "Gespeicherte Websites konnten nicht gelesen werden. Laden Sie die Seite neu und versuchen Sie es erneut."
+  },
+  "site_arrange_failed": {
+    "message": "Websites konnten nicht angeordnet werden. Laden Sie die Seite neu und versuchen Sie es erneut."
+  },
+  "site_overflow_capacity": {
+    "message": "Diese Gruppe enthält bereits mehr Websites, als in das Raster passen. Löschen Sie zuerst eine Website oder verkleinern Sie ein Symbol."
+  },
+  "site_capacity_full": {
+    "message": "Alle 60 Basiszellen dieser Gruppe sind belegt. Löschen Sie zuerst eine Website oder verkleinern Sie ein Symbol."
+  },
+  "site_grid_layout_failed": {
+    "message": "Das Raster konnte nicht angeordnet werden. Ihre Websites bleiben erhalten. Laden Sie die Seite später neu."
+  },
+  "site_grid_save_failed": {
+    "message": "Rasterpositionen konnten nicht gespeichert werden. Versuchen Sie es später erneut."
+  },
+  "site_read_retry_failed": {
+    "message": "Gespeicherte Websites konnten nicht gelesen werden. Versuchen Sie es später erneut."
+  },
+  "site_edit": {
+    "message": "Website bearbeiten"
+  },
+  "site_add": {
+    "message": "Website hinzufügen"
+  },
+  "site_delete_confirm": {
+    "message": "Verknüpfung zu „{name}“ löschen?"
+  },
+  "site_delete_read_failed": {
+    "message": "Gespeicherte Websites konnten nicht gelesen werden. Es wurde nichts gelöscht."
+  },
+  "site_delete_save_failed": {
+    "message": "Änderungen konnten nicht gespeichert werden. Es wurde nichts gelöscht. Versuchen Sie es später erneut."
+  },
+  "site_deleted": {
+    "message": "Website-Verknüpfung gelöscht."
+  },
+  "site_resize_read_failed": {
+    "message": "Gespeicherte Websites konnten nicht gelesen werden. Die ursprüngliche Größe bleibt erhalten."
+  },
+  "site_resize_no_space": {
+    "message": "Diese Gruppe hat nicht genügend Platz. Die ursprüngliche Symbolgröße bleibt erhalten. Löschen Sie zuerst eine Website oder verkleinern Sie ein Symbol."
+  },
+  "site_resize_failed": {
+    "message": "Das Symbol konnte nicht skaliert werden. Die ursprüngliche Größe bleibt erhalten."
+  },
+  "site_resize_save_failed": {
+    "message": "Die Symbolgröße konnte nicht gespeichert werden. Die ursprüngliche Größe bleibt erhalten. Versuchen Sie es später erneut."
+  },
+  "site_overflow_count": {
+    "message": "Weitere Websites ({count})"
+  },
+  "site_edit_action": {
+    "message": "Bearbeiten"
+  },
+  "site_edit_named": {
+    "message": "{name} bearbeiten"
+  },
+  "site_delete_action": {
+    "message": "Löschen"
+  },
+  "site_delete_named": {
+    "message": "{name} löschen"
+  },
+  "site_rearrange_save_failed": {
+    "message": "Ihre Websites bleiben erhalten, aber die neue Anordnung konnte nicht gespeichert werden."
+  },
+  "site_grid_overflow_failed": {
+    "message": "Das Raster konnte nicht angeordnet werden. Unter „Weitere Websites“ können Sie Ihre Websites weiterhin verwalten."
+  },
+  "site_icon_fetch_unavailable": {
+    "message": "Der Symbolabruf ist nicht verfügbar. Versuchen Sie es später erneut oder laden Sie ein Bild hoch."
+  },
+  "site_icon_fetching": {
+    "message": "Wird abgerufen…"
+  },
+  "site_icon_fetch_invalid": {
+    "message": "Es konnte kein gültiges Website-Symbol abgerufen werden. Versuchen Sie, ein Bild hochzuladen."
+  },
+  "site_icon_fetch_failed": {
+    "message": "Das Website-Symbol konnte nicht abgerufen werden. Versuchen Sie es später erneut."
+  },
+  "site_name_invalid": {
+    "message": "Geben Sie einen Website-Namen mit 1 bis 50 Zeichen ein."
+  },
+  "site_deleted_elsewhere": {
+    "message": "Diese Website wurde gelöscht. Brechen Sie ab und fügen Sie sie erneut hinzu."
+  },
+  "site_save_failed": {
+    "message": "Die Website konnte nicht gespeichert werden. Versuchen Sie es später erneut."
+  },
+  "site_saved": {
+    "message": "Website-Änderungen gespeichert."
+  },
+  "site_added": {
+    "message": "Website-Verknüpfung hinzugefügt."
+  },
+  "site_move_read_failed": {
+    "message": "Gespeicherte Websites konnten nicht gelesen werden. Die ursprüngliche Position bleibt erhalten."
+  },
+  "site_move_failed": {
+    "message": "Dieses Element konnte nicht verschoben werden. Versuchen Sie es später erneut."
+  },
+  "site_move_overflow": {
+    "message": "Diese Website befindet sich bereits unter „Weitere Websites“. Die ursprüngliche Position bleibt erhalten."
+  },
+  "site_move_group_full": {
+    "message": "Die Zielgruppe hat nicht genügend Platz. Die Website bleibt in ihrer ursprünglichen Gruppe."
+  },
+  "site_move_no_space": {
+    "message": "Das aktuelle Symbol passt nicht an diese Stelle. Die ursprüngliche Position bleibt erhalten."
+  },
+  "site_move_save_failed": {
+    "message": "Die Verschiebung konnte nicht gespeichert werden. Die ursprüngliche Position wurde wiederhergestellt."
+  },
+  "site_move_saved": {
+    "message": "Neue Position gespeichert."
+  },
+  "site_named_group": {
+    "message": "„{name}“"
+  },
+  "site_remaining_group": {
+    "message": "der verbleibenden Gruppe"
+  },
+  "site_group_deleted_save_failed": {
+    "message": "Die Gruppe wurde gelöscht. Ihre Websites bleiben in {name} erhalten, aber die Gruppenzuordnung konnte nicht gespeichert werden. Versuchen Sie es später erneut."
+  },
+  "site_group_deleted_moved": {
+    "message": "Die Gruppe wurde gelöscht. Ihre Websites befinden sich jetzt in {name}."
+  },
+  "group_default_name": {
+    "message": "Favoriten"
+  },
+  "group_migration_save_failed": {
+    "message": "Ihre Gruppen werden angezeigt, aber die aktualisierten Einstellungen konnten nicht gespeichert werden. Versuchen Sie es später erneut."
+  },
+  "group_read_failed_preserved": {
+    "message": "Website-Gruppen konnten nicht gelesen werden. Laden Sie die Seite neu und versuchen Sie es erneut. Ihre Website-Daten werden nicht gelöscht."
+  },
+  "group_icon_fallback": {
+    "message": "G"
+  },
+  "group_deleted_other_tab": {
+    "message": "Diese Gruppe wurde in einem anderen Tab gelöscht. Brechen Sie ab und versuchen Sie es erneut."
+  },
+  "group_last_cannot_delete": {
+    "message": "Mindestens eine Gruppe muss erhalten bleiben. Diese Gruppe kann nicht gelöscht werden."
+  },
+  "group_delete_help": {
+    "message": "Beim Löschen dieser Gruppe werden ihre Websites nach „{name}“ verschoben. Es werden keine Inhalte gelöscht."
+  },
+  "group_selection_save_failed": {
+    "message": "Die Gruppenauswahl konnte nicht gespeichert werden. Versuchen Sie es später erneut."
+  },
+  "group_settings_named": {
+    "message": "Einstellungen für Gruppe {name}"
+  },
+  "group_deleted_select_another": {
+    "message": "Diese Gruppe wurde gelöscht. Wählen Sie eine andere Gruppe."
+  },
+  "group_settings": {
+    "message": "Gruppeneinstellungen"
+  },
+  "group_add": {
+    "message": "Gruppe hinzufügen"
+  },
+  "group_save_action": {
+    "message": "Speichern"
+  },
+  "group_add_action": {
+    "message": "Hinzufügen"
+  },
+  "group_delete_unavailable": {
+    "message": "Diese Gruppe kann derzeit nicht gelöscht werden. Brechen Sie ab und versuchen Sie es erneut."
+  },
+  "group_delete_confirm": {
+    "message": "Gruppe „{name}“ löschen? Ihre Websites bleiben erhalten und werden nach „{destination}“ verschoben."
+  },
+  "group_last_recheck": {
+    "message": "Mindestens eine Gruppe muss erhalten bleiben. Löschen ist derzeit nicht möglich. Prüfen Sie Ihre Gruppen erneut."
+  },
+  "group_delete_failed": {
+    "message": "Die Gruppe konnte nicht gelöscht werden. Ihre Websites und Gruppen bleiben erhalten. Versuchen Sie es später erneut."
+  },
+  "group_name_invalid": {
+    "message": "Geben Sie einen Gruppennamen mit 1 bis 20 Zeichen ein."
+  },
+  "group_symbol_too_long": {
+    "message": "Ein Textsymbol darf höchstens 8 Zeichen enthalten."
+  },
+  "group_read_failed": {
+    "message": "Gruppen konnten nicht gelesen werden. Laden Sie die Seite neu und versuchen Sie es erneut."
+  },
+  "group_deleted_readd": {
+    "message": "Diese Gruppe wurde gelöscht. Brechen Sie ab und fügen Sie sie erneut hinzu."
+  },
+  "group_name_duplicate": {
+    "message": "Eine Gruppe mit diesem Namen ist bereits vorhanden. Verwenden Sie einen anderen Namen."
+  },
+  "group_save_failed": {
+    "message": "Die Gruppe konnte nicht gespeichert werden. Versuchen Sie es später erneut."
+  },
+  "sidebar_expand": {
+    "message": "Gruppenleiste ausklappen"
+  },
+  "sidebar_collapse": {
+    "message": "Gruppenleiste einklappen"
+  },
+  "menu_website_named": {
+    "message": "Website-Menü für {name}"
+  },
+  "menu_open_named": {
+    "message": "{name} öffnen"
+  },
+  "menu_edit_named": {
+    "message": "{name} bearbeiten"
+  },
+  "menu_delete_named": {
+    "message": "{name} löschen"
+  },
+  "ui_new_tab": {
+    "message": "Neuer Tab"
+  },
+  "ui_group_sidebar_label": {
+    "message": "Seitenleiste für Website-Gruppen"
+  },
+  "ui_groups": {
+    "message": "Gruppen"
+  },
+  "ui_collapse_groups": {
+    "message": "Gruppenleiste einklappen"
+  },
+  "ui_switch_groups": {
+    "message": "Website-Gruppe wechseln"
+  },
+  "ui_add_group": {
+    "message": "Gruppe hinzufügen"
+  },
+  "ui_settings": {
+    "message": "Einstellungen"
+  },
+  "ui_time_date": {
+    "message": "Uhrzeit und Datum"
+  },
+  "ui_loading_date": {
+    "message": "Datum wird geladen…"
+  },
+  "ui_frequent_websites": {
+    "message": "Häufig besuchte Websites"
+  },
+  "ui_empty_group": {
+    "message": "Diese Gruppe enthält noch keine Websites. Klicken Sie mit der rechten Maustaste auf einen freien Bereich, um häufig besuchte Websites hinzuzufügen."
+  },
+  "ui_other_websites": {
+    "message": "Weitere Websites"
+  },
+  "ui_close": {
+    "message": "Schließen"
+  },
+  "ui_overflow_help": {
+    "message": "Websites, die die Rasterkapazität überschreiten, bleiben hier gespeichert und wurden nicht gelöscht. Sie können sie hier öffnen, bearbeiten oder löschen."
+  },
+  "ui_background_menu": {
+    "message": "Hintergrundmenü"
+  },
+  "ui_add_icon": {
+    "message": "Symbol hinzufügen"
+  },
+  "ui_change_wallpaper": {
+    "message": "Hintergrundbild ändern"
+  },
+  "ui_website_menu": {
+    "message": "Website-Menü"
+  },
+  "ui_website_actions_size": {
+    "message": "Website-Aktionen und Symbolgröße"
+  },
+  "ui_open": {
+    "message": "Öffnen"
+  },
+  "ui_edit": {
+    "message": "Bearbeiten"
+  },
+  "ui_size_normal": {
+    "message": "Normal"
+  },
+  "ui_size_wide": {
+    "message": "Breites Symbol"
+  },
+  "ui_size_tall": {
+    "message": "Hohes Symbol"
+  },
+  "ui_size_large": {
+    "message": "Großes Symbol"
+  },
+  "ui_delete": {
+    "message": "Löschen"
+  },
+  "ui_add_website": {
+    "message": "Website hinzufügen"
+  },
+  "ui_website_name": {
+    "message": "Website-Name"
+  },
+  "ui_website_address": {
+    "message": "Website-Adresse"
+  },
+  "ui_website_address_help": {
+    "message": "Unterstützt http:// und https://. Ohne Protokollangabe wird https:// verwendet."
+  },
+  "ui_website_icon": {
+    "message": "Website-Symbol"
+  },
+  "ui_fetch_icon": {
+    "message": "Symbol abrufen"
+  },
+  "ui_default_icon": {
+    "message": "Standardsymbol verwenden"
+  },
+  "ui_website_icon_help": {
+    "message": "Rufen Sie ein Symbol von der eingegebenen Adresse ab oder laden Sie ein Bild hoch (maximal 2 MiB). Beim Abrufen bittet Firefox möglicherweise um Zugriff auf die Website. Änderungen werden nach dem Speichern wirksam."
+  },
+  "ui_cancel": {
+    "message": "Abbrechen"
+  },
+  "ui_save": {
+    "message": "Speichern"
+  },
+  "ui_group_name": {
+    "message": "Gruppenname"
+  },
+  "ui_group_icon": {
+    "message": "Gruppensymbol"
+  },
+  "ui_group_symbol_placeholder": {
+    "message": "z. B. 📁, ⭐"
+  },
+  "ui_text_icon": {
+    "message": "Textsymbol verwenden"
+  },
+  "ui_upload_group_icon": {
+    "message": "Gruppensymbol hochladen"
+  },
+  "ui_group_icon_help": {
+    "message": "Geben Sie ein Emoji oder Text ein oder laden Sie ein lokales Bild mit maximal 2 MiB hoch."
+  },
+  "ui_delete_group": {
+    "message": "Gruppe löschen"
+  },
+  "ui_add": {
+    "message": "Hinzufügen"
+  },
+  "ui_personalization": {
+    "message": "Personalisierung"
+  },
+  "ui_close_settings": {
+    "message": "Einstellungen schließen"
+  },
+  "ui_background": {
+    "message": "Hintergrund"
+  },
+  "ui_preset_wallpapers": {
+    "message": "Voreingestellte Hintergrundbilder"
+  },
+  "ui_click_to_switch": {
+    "message": "Zum Wechseln klicken"
+  },
+  "ui_common_background_colors": {
+    "message": "Häufige Hintergrundfarben"
+  },
+  "ui_background_image": {
+    "message": "Hintergrundbild"
+  },
+  "ui_background_image_help": {
+    "message": "Wird nach der Auswahl automatisch angewendet, maximal 10 MiB. Wird nur in diesem Browser gespeichert."
+  },
+  "ui_reset_background": {
+    "message": "Standardhintergrund wiederherstellen"
+  },
+  "ui_appearance": {
+    "message": "Erscheinungsbild"
+  },
+  "ui_theme": {
+    "message": "Design"
+  },
+  "ui_dark": {
+    "message": "Dunkel"
+  },
+  "ui_light": {
+    "message": "Hell"
+  },
+  "ui_follow_system": {
+    "message": "Systemeinstellung folgen"
+  },
+  "ui_show_clock": {
+    "message": "Uhr anzeigen"
+  },
+  "ui_wallpaper_processing": {
+    "message": "Bitte warten Sie, bis die Hintergrundverarbeitung abgeschlossen ist, bevor Sie ein Hintergrundbild auswählen."
+  },
+  "ui_group_full": {
+    "message": "Die {count} Basisfelder dieser Gruppe sind belegt. Schaffen Sie zuerst Platz."
+  },
+  "ui_add_website_icon": {
+    "message": "Website-Symbol hinzufügen"
+  },
+  "image_invalid_size": {
+    "message": "Wähle ein gültiges Bild mit höchstens 2 MiB aus."
+  },
+  "image_unsupported_type": {
+    "message": "Wähle ein Bild im Format PNG, JPEG, WebP, GIF, AVIF oder ICO aus."
+  },
+  "image_create_failed": {
+    "message": "Aus diesem Bild konnte kein Symbol erstellt werden. Wähle ein anderes Bild aus."
+  },
+  "fetch_resource_too_large": {
+    "message": "Die Symboldatei überschreitet die zulässige Größe."
+  },
+  "fetch_empty_content": {
+    "message": "Die Website hat leeren Inhalt zurückgegeben."
+  },
+  "fetch_aborted": {
+    "message": "Die Symbolanfrage wurde abgebrochen."
+  },
+  "fetch_unavailable": {
+    "message": "Die Website kann derzeit kein Symbol bereitstellen."
+  },
+  "fetch_unsupported_url": {
+    "message": "Die Website hat eine nicht unterstützte Adresse zurückgegeben."
+  },
+  "fetch_invalid_website_url": {
+    "message": "Gib zuerst eine gültige HTTP- oder HTTPS-Webadresse ein."
+  },
+  "fetch_permission_unavailable": {
+    "message": "Der Browser kann derzeit keinen Zugriff auf die Website anfordern. Lade ein lokales Symbol hoch."
+  },
+  "fetch_permission_failed": {
+    "message": "Der Zugriff auf die Website konnte nicht angefordert werden. Versuche es erneut oder lade ein lokales Symbol hoch."
+  },
+  "fetch_permission_denied": {
+    "message": "Ohne Zugriffsberechtigung für diese Website kann das Symbol nicht abgerufen werden. Du kannst weiterhin ein lokales Symbol hochladen."
+  },
+  "fetch_timeout": {
+    "message": "Die Zeit zum Abrufen des Symbols wurde überschritten."
+  },
+  "fetch_timeout_retry": {
+    "message": "Die Zeit zum Abrufen des Symbols wurde überschritten. Versuche es später erneut oder lade ein lokales Symbol hoch."
+  },
+  "fetch_no_icon": {
+    "message": "Es konnte kein verwendbares Symbol abgerufen werden. Prüfe die Adresse, versuche es später erneut oder lade ein lokales Bild hoch."
+  },
+  "layout_grid_full": {
+    "message": "Im 10×6-Raster dieser Gruppe ist nicht genügend Platz verfügbar."
+  },
+  "layout_mobile_failed": {
+    "message": "Die Symbole können derzeit nicht für Mobilgeräte angeordnet werden."
+  },
+  "grid_drop_no_space": {
+    "message": "Am Ziel ist nicht genügend Platz. Die ursprüngliche Position wurde beibehalten."
+  },
+  "extension_name": {
+    "message": "Einfacher neuer Tab"
+  },
+  "extension_description": {
+    "message": "Ein einfacher neuer Firefox-Tab mit lokaler Uhr, eigenen Hintergründen und Verknüpfungen zu häufig besuchten Websites."
+  },
+  "background_storage_access_error": {
+    "message": "Der lokale Hintergrundspeicher ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut."
+  },
+  "background_storage_blocked_error": {
+    "message": "Der Hintergrundspeicher wird von einer anderen Seite verwendet. Schließen Sie ältere Tabs und versuchen Sie es erneut."
+  },
+  "background_storage_save_error": {
+    "message": "Die Hintergrundeinstellungen konnten nicht lokal gespeichert werden. Bitte versuchen Sie es später erneut."
+  },
+  "background_image_format_error": {
+    "message": "Bitte wählen Sie ein Bild im Format PNG, JPEG, WebP, GIF oder AVIF aus."
+  },
+  "background_empty_image_error": {
+    "message": "Dieses Bild ist eine leere Datei. Bitte wählen Sie ein anderes Bild aus."
+  },
+  "background_image_size_error": {
+    "message": "Das Bild darf nicht größer als 10 MiB sein. Bitte wählen Sie ein kleineres Bild aus."
+  },
+  "background_image_decode_error": {
+    "message": "Dieses Bild konnte nicht geöffnet werden. Bitte wählen Sie ein anderes Bild aus."
+  },
+  "background_preset_unavailable": {
+    "message": "Dieses voreingestellte Hintergrundbild ist nicht verfügbar. Bitte wählen Sie ein anderes aus."
+  },
+  "background_update_error": {
+    "message": "Der Hintergrund konnte derzeit nicht aktualisiert werden. Bitte versuchen Sie es später erneut."
+  },
+  "background_saving_color": {
+    "message": "Einfarbiger Hintergrund wird gespeichert…"
+  },
+  "background_saved_color": {
+    "message": "Einfarbiger Hintergrund angewendet und gespeichert."
+  },
+  "background_wallpaper_label": {
+    "message": "Hintergrundbild auswählen, Eintrag {index}"
+  },
+  "background_saving_wallpaper": {
+    "message": "Hintergrundbild wird gespeichert…"
+  },
+  "background_saved_wallpaper": {
+    "message": "Hintergrundbild angewendet und gespeichert."
+  },
+  "background_saving_image": {
+    "message": "Hintergrundbild wird gelesen und gespeichert…"
+  },
+  "background_saved_image": {
+    "message": "Hintergrundbild angewendet und gespeichert."
+  },
+  "background_restoring": {
+    "message": "Standardhintergrund wird wiederhergestellt…"
+  },
+  "background_restored": {
+    "message": "Standardhintergrund wiederhergestellt."
+  },
+  "background_saved_invalid": {
+    "message": "Die gespeicherten Hintergrundeinstellungen sind ungültig."
+  },
+  "background_load_error": {
+    "message": "Der gespeicherte Hintergrund konnte derzeit nicht gelesen werden. Daher wird der Standardhintergrund verwendet. Sie können den Hintergrund erneut festlegen oder den Standard wiederherstellen."
+  },
+  "color_snow_white": {
+    "message": "Schneeweiß"
+  },
+  "color_ivory": {
+    "message": "Elfenbein"
+  },
+  "color_fog_gray": {
+    "message": "Nebelgrau"
+  },
+  "color_silver_gray": {
+    "message": "Silbergrau"
+  },
+  "color_limestone_gray": {
+    "message": "Kalksteingrau"
+  },
+  "color_slate_gray": {
+    "message": "Schiefergrau"
+  },
+  "color_charcoal_gray": {
+    "message": "Anthrazitgrau"
+  },
+  "color_ink_black": {
+    "message": "Tintenschwarz"
+  },
+  "color_cherry_red": {
+    "message": "Kirschrot"
+  },
+  "color_coral_red": {
+    "message": "Korallenrot"
+  },
+  "color_rose_red": {
+    "message": "Rosenrot"
+  },
+  "color_orange_red": {
+    "message": "Orangerot"
+  },
+  "color_apricot": {
+    "message": "Aprikose"
+  },
+  "color_amber": {
+    "message": "Bernstein"
+  },
+  "color_golden_yellow": {
+    "message": "Goldgelb"
+  },
+  "color_warm_brown": {
+    "message": "Warmes Braun"
+  },
+  "color_terracotta": {
+    "message": "Terrakotta"
+  },
+  "color_cinnamon": {
+    "message": "Zimt"
+  },
+  "color_grass_green": {
+    "message": "Grasgrün"
+  },
+  "color_leaf_green": {
+    "message": "Blattgrün"
+  },
+  "color_emerald": {
+    "message": "Smaragd"
+  },
+  "color_teal": {
+    "message": "Blaugrün"
+  },
+  "color_lake_cyan": {
+    "message": "Seeblau"
+  },
+  "color_sky_blue": {
+    "message": "Himmelblau"
+  },
+  "color_azure_blue": {
+    "message": "Azurblau"
+  },
+  "color_indigo": {
+    "message": "Indigo"
+  },
+  "color_violet": {
+    "message": "Violett"
+  },
+  "color_orchid_purple": {
+    "message": "Orchideenviolett"
+  },
+  "color_magenta": {
+    "message": "Magenta"
+  },
+  "color_berry_purple": {
+    "message": "Beerenviolett"
+  },
+  "color_cream": {
+    "message": "Creme"
+  },
+  "color_peach": {
+    "message": "Pfirsich"
+  },
+  "color_light_coral": {
+    "message": "Helles Korallenrot"
+  },
+  "color_pale_pink": {
+    "message": "Blassrosa"
+  },
+  "color_pale_purple": {
+    "message": "Blassviolett"
+  },
+  "color_lavender": {
+    "message": "Lavendel"
+  },
+  "color_ice_blue": {
+    "message": "Eisblau"
+  },
+  "color_light_cyan": {
+    "message": "Helles Cyan"
+  },
+  "color_mint": {
+    "message": "Mintgrün"
+  },
+  "color_light_green": {
+    "message": "Hellgrün"
+  },
+  "color_deep_sea_blue": {
+    "message": "Tiefseeblau"
+  },
+  "color_midnight_blue": {
+    "message": "Mitternachtsblau"
+  },
+  "color_dark_indigo": {
+    "message": "Dunkles Indigo"
+  },
+  "color_dark_purple": {
+    "message": "Dunkelviolett"
+  },
+  "color_forest_green": {
+    "message": "Waldgrün"
+  },
+  "color_dark_teal": {
+    "message": "Dunkles Blaugrün"
+  },
+  "color_wine_red": {
+    "message": "Weinrot"
+  },
+  "color_espresso": {
+    "message": "Espresso"
+  }
+}

@@ -1,0 +1,698 @@
+{
+  "site_address_required": {
+    "message": "Saisissez l’adresse d’un site web."
+  },
+  "site_address_invalid": {
+    "message": "Saisissez une adresse de site web valide, par exemple https://example.com."
+  },
+  "site_address_http_only": {
+    "message": "L’adresse du site web doit utiliser http:// ou https://."
+  },
+  "site_icon_fallback": {
+    "message": "S"
+  },
+  "site_icon_fetch": {
+    "message": "Récupérer l'icône"
+  },
+  "site_migration_save_failed": {
+    "message": "Vos sites web restent sur cette page, mais les données migrées n’ont pas pu être enregistrées. Réessayez plus tard."
+  },
+  "site_invalid_saved_entries": {
+    "message": "Certaines entrées de sites web enregistrées étaient invalides et ont été ignorées."
+  },
+  "site_read_extension_failed": {
+    "message": "Impossible de lire les sites web enregistrés. Rechargez l’extension et réessayez."
+  },
+  "site_read_reload_failed": {
+    "message": "Impossible de lire les sites web enregistrés. Rechargez la page et réessayez."
+  },
+  "site_arrange_failed": {
+    "message": "Impossible de disposer les sites web. Rechargez la page et réessayez."
+  },
+  "site_overflow_capacity": {
+    "message": "Ce groupe contient déjà plus de sites web que la grille ne peut en accueillir. Supprimez d’abord un site web ou réduisez la taille d’une icône."
+  },
+  "site_capacity_full": {
+    "message": "Les 60 cellules de base de ce groupe sont occupées. Supprimez d’abord un site web ou réduisez la taille d’une icône."
+  },
+  "site_grid_layout_failed": {
+    "message": "Impossible de disposer la grille. Vos sites web sont conservés ; rechargez la page plus tard."
+  },
+  "site_grid_save_failed": {
+    "message": "Impossible d’enregistrer les positions de la grille. Réessayez plus tard."
+  },
+  "site_read_retry_failed": {
+    "message": "Impossible de lire les sites web enregistrés. Réessayez plus tard."
+  },
+  "site_edit": {
+    "message": "Modifier le site web"
+  },
+  "site_add": {
+    "message": "Ajouter un site web"
+  },
+  "site_delete_confirm": {
+    "message": "Supprimer le raccourci vers « {name} » ?"
+  },
+  "site_delete_read_failed": {
+    "message": "Impossible de lire les sites web enregistrés. Aucun contenu n’a été supprimé."
+  },
+  "site_delete_save_failed": {
+    "message": "Impossible d’enregistrer les modifications. Aucun contenu n’a été supprimé. Réessayez plus tard."
+  },
+  "site_deleted": {
+    "message": "Raccourci du site web supprimé."
+  },
+  "site_resize_read_failed": {
+    "message": "Impossible de lire les sites web enregistrés. La taille d’origine est conservée."
+  },
+  "site_resize_no_space": {
+    "message": "Ce groupe manque d’espace. La taille d’origine de l’icône est conservée. Supprimez d’abord un site web ou réduisez la taille d’une icône."
+  },
+  "site_resize_failed": {
+    "message": "Impossible de redimensionner l’icône. La taille d’origine est conservée."
+  },
+  "site_resize_save_failed": {
+    "message": "Impossible d’enregistrer la taille de l’icône. La taille d’origine est conservée. Réessayez plus tard."
+  },
+  "site_overflow_count": {
+    "message": "Autres sites web ({count})"
+  },
+  "site_edit_action": {
+    "message": "Modifier"
+  },
+  "site_edit_named": {
+    "message": "Modifier {name}"
+  },
+  "site_delete_action": {
+    "message": "Supprimer"
+  },
+  "site_delete_named": {
+    "message": "Supprimer {name}"
+  },
+  "site_rearrange_save_failed": {
+    "message": "Vos sites web sont conservés, mais leur nouvelle disposition n’a pas pu être enregistrée."
+  },
+  "site_grid_overflow_failed": {
+    "message": "Impossible de disposer la grille. Vous pouvez toujours gérer vos sites web dans « Autres sites web »."
+  },
+  "site_icon_fetch_unavailable": {
+    "message": "La récupération d’icônes est indisponible. Réessayez plus tard ou importez une image."
+  },
+  "site_icon_fetching": {
+    "message": "Récupération…"
+  },
+  "site_icon_fetch_invalid": {
+    "message": "Impossible de récupérer une icône valide pour ce site web. Essayez d’importer une image."
+  },
+  "site_icon_fetch_failed": {
+    "message": "Impossible de récupérer l’icône du site web. Réessayez plus tard."
+  },
+  "site_name_invalid": {
+    "message": "Saisissez un nom de site web de 1 à 50 caractères."
+  },
+  "site_deleted_elsewhere": {
+    "message": "Ce site web a été supprimé. Annulez et ajoutez-le à nouveau."
+  },
+  "site_save_failed": {
+    "message": "Impossible d’enregistrer le site web. Réessayez plus tard."
+  },
+  "site_saved": {
+    "message": "Modifications du site web enregistrées."
+  },
+  "site_added": {
+    "message": "Raccourci du site web ajouté."
+  },
+  "site_move_read_failed": {
+    "message": "Impossible de lire les sites web enregistrés. La position d’origine est conservée."
+  },
+  "site_move_failed": {
+    "message": "Impossible de déplacer cet élément. Réessayez plus tard."
+  },
+  "site_move_overflow": {
+    "message": "Ce site web se trouve déjà dans Autres sites web. La position d’origine est conservée."
+  },
+  "site_move_group_full": {
+    "message": "Le groupe de destination manque d’espace. Le site web reste dans son groupe d’origine."
+  },
+  "site_move_no_space": {
+    "message": "L’icône actuelle ne tient pas à cet emplacement. La position d’origine est conservée."
+  },
+  "site_move_save_failed": {
+    "message": "Impossible d’enregistrer le déplacement. La position d’origine a été rétablie."
+  },
+  "site_move_saved": {
+    "message": "Nouvelle position enregistrée."
+  },
+  "site_named_group": {
+    "message": "« {name} »"
+  },
+  "site_remaining_group": {
+    "message": "le groupe restant"
+  },
+  "site_group_deleted_save_failed": {
+    "message": "Le groupe a été supprimé et ses sites web sont conservés dans {name}, mais leur affectation au groupe n’a pas pu être enregistrée. Réessayez plus tard."
+  },
+  "site_group_deleted_moved": {
+    "message": "Le groupe a été supprimé et ses sites web ont été déplacés vers {name}."
+  },
+  "group_default_name": {
+    "message": "Favoris"
+  },
+  "group_migration_save_failed": {
+    "message": "Vos groupes sont affichés, mais leurs paramètres mis à jour n’ont pas pu être enregistrés. Réessayez plus tard."
+  },
+  "group_read_failed_preserved": {
+    "message": "Impossible de lire les groupes de sites web. Rechargez la page et réessayez. Les données de vos sites web ne seront pas supprimées."
+  },
+  "group_icon_fallback": {
+    "message": "G"
+  },
+  "group_deleted_other_tab": {
+    "message": "Ce groupe a été supprimé dans un autre onglet. Annulez et réessayez."
+  },
+  "group_last_cannot_delete": {
+    "message": "Au moins un groupe doit être conservé. Ce groupe ne peut pas être supprimé."
+  },
+  "group_delete_help": {
+    "message": "La suppression de ce groupe déplacera ses sites web vers « {name} ». Aucun contenu ne sera supprimé."
+  },
+  "group_selection_save_failed": {
+    "message": "Impossible d’enregistrer le choix du groupe. Réessayez plus tard."
+  },
+  "group_settings_named": {
+    "message": "Paramètres du groupe {name}"
+  },
+  "group_deleted_select_another": {
+    "message": "Ce groupe a été supprimé. Sélectionnez un autre groupe."
+  },
+  "group_settings": {
+    "message": "Paramètres du groupe"
+  },
+  "group_add": {
+    "message": "Ajouter un groupe"
+  },
+  "group_save_action": {
+    "message": "Enregistrer"
+  },
+  "group_add_action": {
+    "message": "Ajouter"
+  },
+  "group_delete_unavailable": {
+    "message": "Impossible de supprimer ce groupe pour le moment. Annulez et réessayez."
+  },
+  "group_delete_confirm": {
+    "message": "Supprimer le groupe « {name} » ? Ses sites web seront conservés et déplacés vers « {destination} »."
+  },
+  "group_last_recheck": {
+    "message": "Au moins un groupe doit être conservé. La suppression est impossible ; vérifiez à nouveau vos groupes."
+  },
+  "group_delete_failed": {
+    "message": "Impossible de supprimer le groupe. Vos sites web et vos groupes sont conservés. Réessayez plus tard."
+  },
+  "group_name_invalid": {
+    "message": "Saisissez un nom de groupe de 1 à 20 caractères."
+  },
+  "group_symbol_too_long": {
+    "message": "Une icône de texte peut contenir jusqu’à 8 caractères."
+  },
+  "group_read_failed": {
+    "message": "Impossible de lire les groupes. Rechargez la page et réessayez."
+  },
+  "group_deleted_readd": {
+    "message": "Ce groupe a été supprimé. Annulez et ajoutez-le à nouveau."
+  },
+  "group_name_duplicate": {
+    "message": "Un groupe portant ce nom existe déjà. Utilisez un autre nom."
+  },
+  "group_save_failed": {
+    "message": "Impossible d’enregistrer le groupe. Réessayez plus tard."
+  },
+  "sidebar_expand": {
+    "message": "Développer la barre des groupes"
+  },
+  "sidebar_collapse": {
+    "message": "Réduire la barre des groupes"
+  },
+  "menu_website_named": {
+    "message": "Menu du site web {name}"
+  },
+  "menu_open_named": {
+    "message": "Ouvrir {name}"
+  },
+  "menu_edit_named": {
+    "message": "Modifier {name}"
+  },
+  "menu_delete_named": {
+    "message": "Supprimer {name}"
+  },
+  "ui_new_tab": {
+    "message": "Nouvel onglet"
+  },
+  "ui_group_sidebar_label": {
+    "message": "Barre latérale des groupes de sites web"
+  },
+  "ui_groups": {
+    "message": "Groupes"
+  },
+  "ui_collapse_groups": {
+    "message": "Réduire la barre des groupes"
+  },
+  "ui_switch_groups": {
+    "message": "Changer de groupe de sites web"
+  },
+  "ui_add_group": {
+    "message": "Ajouter un groupe"
+  },
+  "ui_settings": {
+    "message": "Paramètres"
+  },
+  "ui_time_date": {
+    "message": "Heure et date"
+  },
+  "ui_loading_date": {
+    "message": "Chargement de la date…"
+  },
+  "ui_frequent_websites": {
+    "message": "Sites web fréquents"
+  },
+  "ui_empty_group": {
+    "message": "Ce groupe ne contient encore aucun site web. Faites un clic droit dans une zone vide pour ajouter vos sites web fréquents."
+  },
+  "ui_other_websites": {
+    "message": "Autres sites web"
+  },
+  "ui_close": {
+    "message": "Fermer"
+  },
+  "ui_overflow_help": {
+    "message": "Les sites web qui dépassent la capacité de la grille sont conservés ici et n'ont pas été supprimés. Vous pouvez les ouvrir, les modifier ou les supprimer ici."
+  },
+  "ui_background_menu": {
+    "message": "Menu de l'arrière-plan"
+  },
+  "ui_add_icon": {
+    "message": "Ajouter une icône"
+  },
+  "ui_change_wallpaper": {
+    "message": "Changer le fond d'écran"
+  },
+  "ui_website_menu": {
+    "message": "Menu du site web"
+  },
+  "ui_website_actions_size": {
+    "message": "Actions du site web et taille de l'icône"
+  },
+  "ui_open": {
+    "message": "Ouvrir"
+  },
+  "ui_edit": {
+    "message": "Modifier"
+  },
+  "ui_size_normal": {
+    "message": "Normale"
+  },
+  "ui_size_wide": {
+    "message": "Icône large"
+  },
+  "ui_size_tall": {
+    "message": "Icône haute"
+  },
+  "ui_size_large": {
+    "message": "Grande icône"
+  },
+  "ui_delete": {
+    "message": "Supprimer"
+  },
+  "ui_add_website": {
+    "message": "Ajouter un site web"
+  },
+  "ui_website_name": {
+    "message": "Nom du site web"
+  },
+  "ui_website_address": {
+    "message": "Adresse du site web"
+  },
+  "ui_website_address_help": {
+    "message": "Prend en charge http:// et https://. Si le protocole est omis, https:// est utilisé."
+  },
+  "ui_website_icon": {
+    "message": "Icône du site web"
+  },
+  "ui_fetch_icon": {
+    "message": "Récupérer l'icône"
+  },
+  "ui_default_icon": {
+    "message": "Utiliser l'icône par défaut"
+  },
+  "ui_website_icon_help": {
+    "message": "Récupérez une icône depuis l'adresse saisie ou importez une image (2 MiB maximum). Lors de la récupération, Firefox peut demander l'autorisation d'accéder au site web. Les modifications prennent effet après l'enregistrement."
+  },
+  "ui_cancel": {
+    "message": "Annuler"
+  },
+  "ui_save": {
+    "message": "Enregistrer"
+  },
+  "ui_group_name": {
+    "message": "Nom du groupe"
+  },
+  "ui_group_icon": {
+    "message": "Icône du groupe"
+  },
+  "ui_group_symbol_placeholder": {
+    "message": "Par exemple 📁, ⭐"
+  },
+  "ui_text_icon": {
+    "message": "Utiliser une icône de texte"
+  },
+  "ui_upload_group_icon": {
+    "message": "Importer l'icône du groupe"
+  },
+  "ui_group_icon_help": {
+    "message": "Saisissez un émoji ou du texte, ou importez une image locale de 2 MiB maximum."
+  },
+  "ui_delete_group": {
+    "message": "Supprimer le groupe"
+  },
+  "ui_add": {
+    "message": "Ajouter"
+  },
+  "ui_personalization": {
+    "message": "Personnalisation"
+  },
+  "ui_close_settings": {
+    "message": "Fermer les paramètres"
+  },
+  "ui_background": {
+    "message": "Arrière-plan"
+  },
+  "ui_preset_wallpapers": {
+    "message": "Fonds d'écran prédéfinis"
+  },
+  "ui_click_to_switch": {
+    "message": "Cliquer pour changer"
+  },
+  "ui_common_background_colors": {
+    "message": "Couleurs d'arrière-plan courantes"
+  },
+  "ui_background_image": {
+    "message": "Image d'arrière-plan"
+  },
+  "ui_background_image_help": {
+    "message": "Appliquée automatiquement après sélection, 10 MiB maximum. Conservée uniquement dans ce navigateur."
+  },
+  "ui_reset_background": {
+    "message": "Rétablir l'arrière-plan par défaut"
+  },
+  "ui_appearance": {
+    "message": "Apparence"
+  },
+  "ui_theme": {
+    "message": "Thème"
+  },
+  "ui_dark": {
+    "message": "Sombre"
+  },
+  "ui_light": {
+    "message": "Clair"
+  },
+  "ui_follow_system": {
+    "message": "Suivre le système"
+  },
+  "ui_show_clock": {
+    "message": "Afficher l'horloge"
+  },
+  "ui_wallpaper_processing": {
+    "message": "Veuillez attendre la fin du traitement de l'arrière-plan avant de choisir un fond d'écran."
+  },
+  "ui_group_full": {
+    "message": "Les {count} cases de base de ce groupe sont pleines. Libérez d'abord de la place."
+  },
+  "ui_add_website_icon": {
+    "message": "Ajouter une icône de site web"
+  },
+  "image_invalid_size": {
+    "message": "Choisissez une image valide de 2 MiB maximum."
+  },
+  "image_unsupported_type": {
+    "message": "Choisissez une image PNG, JPEG, WebP, GIF, AVIF ou ICO."
+  },
+  "image_create_failed": {
+    "message": "Impossible de créer une icône à partir de cette image. Choisissez une autre image."
+  },
+  "fetch_resource_too_large": {
+    "message": "La ressource de l’icône dépasse la taille limite."
+  },
+  "fetch_empty_content": {
+    "message": "Le site web a renvoyé un contenu vide."
+  },
+  "fetch_aborted": {
+    "message": "La requête de l’icône a été annulée."
+  },
+  "fetch_unavailable": {
+    "message": "Le site web ne peut pas fournir d’icône pour le moment."
+  },
+  "fetch_unsupported_url": {
+    "message": "Le site web a renvoyé une adresse non prise en charge."
+  },
+  "fetch_invalid_website_url": {
+    "message": "Saisissez d’abord une adresse de site web HTTP ou HTTPS valide."
+  },
+  "fetch_permission_unavailable": {
+    "message": "Le navigateur ne peut pas demander l’accès au site web pour le moment. Importez une icône locale."
+  },
+  "fetch_permission_failed": {
+    "message": "Impossible de demander l’accès au site web. Réessayez ou importez une icône locale."
+  },
+  "fetch_permission_denied": {
+    "message": "Impossible de récupérer l’icône sans autorisation d’accès à ce site web. Vous pouvez toujours importer une icône locale."
+  },
+  "fetch_timeout": {
+    "message": "Le délai de récupération de l’icône a expiré."
+  },
+  "fetch_timeout_retry": {
+    "message": "Le délai de récupération de l’icône a expiré. Réessayez plus tard ou importez une icône locale."
+  },
+  "fetch_no_icon": {
+    "message": "Aucune icône utilisable n’a pu être récupérée. Vérifiez l’adresse, réessayez plus tard ou importez une image locale."
+  },
+  "layout_grid_full": {
+    "message": "La grille de 10×6 de ce groupe ne dispose pas d’assez de place."
+  },
+  "layout_mobile_failed": {
+    "message": "Impossible d’organiser les icônes pour mobile pour le moment."
+  },
+  "grid_drop_no_space": {
+    "message": "Il n’y a pas assez de place à cet emplacement. La position d’origine a été conservée."
+  },
+  "extension_name": {
+    "message": "Nouvel onglet simple"
+  },
+  "extension_description": {
+    "message": "Un nouvel onglet Firefox épuré avec horloge, arrière-plans personnalisés et raccourcis vers vos sites."
+  },
+  "background_storage_access_error": {
+    "message": "Le stockage local de l'arrière-plan est temporairement inaccessible. Veuillez réessayer plus tard."
+  },
+  "background_storage_blocked_error": {
+    "message": "Le stockage de l'arrière-plan est utilisé par une autre page. Fermez les anciens onglets, puis réessayez."
+  },
+  "background_storage_save_error": {
+    "message": "Les paramètres de l'arrière-plan n'ont pas pu être enregistrés localement. Veuillez réessayer plus tard."
+  },
+  "background_image_format_error": {
+    "message": "Veuillez choisir une image PNG, JPEG, WebP, GIF ou AVIF."
+  },
+  "background_empty_image_error": {
+    "message": "Cette image est un fichier vide. Veuillez choisir une autre image."
+  },
+  "background_image_size_error": {
+    "message": "L'image ne doit pas dépasser 10 MiB. Veuillez choisir une image plus petite."
+  },
+  "background_image_decode_error": {
+    "message": "Cette image n'a pas pu être ouverte. Veuillez choisir une autre image."
+  },
+  "background_preset_unavailable": {
+    "message": "Ce fond d'écran prédéfini n'est pas disponible. Veuillez en choisir un autre."
+  },
+  "background_update_error": {
+    "message": "L'arrière-plan n'a pas pu être mis à jour pour le moment. Veuillez réessayer plus tard."
+  },
+  "background_saving_color": {
+    "message": "Enregistrement de l'arrière-plan uni…"
+  },
+  "background_saved_color": {
+    "message": "Arrière-plan uni appliqué et enregistré."
+  },
+  "background_wallpaper_label": {
+    "message": "Choisir l'image d'arrière-plan, élément {index}"
+  },
+  "background_saving_wallpaper": {
+    "message": "Enregistrement du fond d'écran…"
+  },
+  "background_saved_wallpaper": {
+    "message": "Fond d'écran appliqué et enregistré."
+  },
+  "background_saving_image": {
+    "message": "Lecture et enregistrement de l'image d'arrière-plan…"
+  },
+  "background_saved_image": {
+    "message": "Image d'arrière-plan appliquée et enregistrée."
+  },
+  "background_restoring": {
+    "message": "Rétablissement de l'arrière-plan par défaut…"
+  },
+  "background_restored": {
+    "message": "Arrière-plan par défaut rétabli."
+  },
+  "background_saved_invalid": {
+    "message": "Les paramètres de l'arrière-plan enregistrés ne sont pas valides."
+  },
+  "background_load_error": {
+    "message": "L'arrière-plan enregistré n'a pas pu être lu pour le moment. L'arrière-plan par défaut est utilisé. Vous pouvez définir à nouveau un arrière-plan ou rétablir celui par défaut."
+  },
+  "color_snow_white": {
+    "message": "Blanc neige"
+  },
+  "color_ivory": {
+    "message": "Ivoire"
+  },
+  "color_fog_gray": {
+    "message": "Gris brume"
+  },
+  "color_silver_gray": {
+    "message": "Gris argent"
+  },
+  "color_limestone_gray": {
+    "message": "Gris calcaire"
+  },
+  "color_slate_gray": {
+    "message": "Gris ardoise"
+  },
+  "color_charcoal_gray": {
+    "message": "Gris anthracite"
+  },
+  "color_ink_black": {
+    "message": "Noir d’encre"
+  },
+  "color_cherry_red": {
+    "message": "Rouge cerise"
+  },
+  "color_coral_red": {
+    "message": "Rouge corail"
+  },
+  "color_rose_red": {
+    "message": "Rouge rose"
+  },
+  "color_orange_red": {
+    "message": "Rouge orangé"
+  },
+  "color_apricot": {
+    "message": "Abricot"
+  },
+  "color_amber": {
+    "message": "Ambre"
+  },
+  "color_golden_yellow": {
+    "message": "Jaune doré"
+  },
+  "color_warm_brown": {
+    "message": "Brun chaud"
+  },
+  "color_terracotta": {
+    "message": "Terre cuite"
+  },
+  "color_cinnamon": {
+    "message": "Cannelle"
+  },
+  "color_grass_green": {
+    "message": "Vert herbe"
+  },
+  "color_leaf_green": {
+    "message": "Vert feuille"
+  },
+  "color_emerald": {
+    "message": "Émeraude"
+  },
+  "color_teal": {
+    "message": "Bleu-vert"
+  },
+  "color_lake_cyan": {
+    "message": "Bleu lac"
+  },
+  "color_sky_blue": {
+    "message": "Bleu ciel"
+  },
+  "color_azure_blue": {
+    "message": "Bleu azur"
+  },
+  "color_indigo": {
+    "message": "Indigo"
+  },
+  "color_violet": {
+    "message": "Violet"
+  },
+  "color_orchid_purple": {
+    "message": "Violet orchidée"
+  },
+  "color_magenta": {
+    "message": "Magenta"
+  },
+  "color_berry_purple": {
+    "message": "Violet baie"
+  },
+  "color_cream": {
+    "message": "Crème"
+  },
+  "color_peach": {
+    "message": "Pêche"
+  },
+  "color_light_coral": {
+    "message": "Corail clair"
+  },
+  "color_pale_pink": {
+    "message": "Rose pâle"
+  },
+  "color_pale_purple": {
+    "message": "Violet pâle"
+  },
+  "color_lavender": {
+    "message": "Lavande"
+  },
+  "color_ice_blue": {
+    "message": "Bleu glacier"
+  },
+  "color_light_cyan": {
+    "message": "Cyan clair"
+  },
+  "color_mint": {
+    "message": "Menthe"
+  },
+  "color_light_green": {
+    "message": "Vert clair"
+  },
+  "color_deep_sea_blue": {
+    "message": "Bleu des profondeurs"
+  },
+  "color_midnight_blue": {
+    "message": "Bleu nuit"
+  },
+  "color_dark_indigo": {
+    "message": "Indigo foncé"
+  },
+  "color_dark_purple": {
+    "message": "Violet foncé"
+  },
+  "color_forest_green": {
+    "message": "Vert forêt"
+  },
+  "color_dark_teal": {
+    "message": "Bleu-vert foncé"
+  },
+  "color_wine_red": {
+    "message": "Rouge bordeaux"
+  },
+  "color_espresso": {
+    "message": "Espresso"
+  }
+}

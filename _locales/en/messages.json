@@ -1,0 +1,698 @@
+{
+  "site_address_required": {
+    "message": "Enter a website address."
+  },
+  "site_address_invalid": {
+    "message": "Enter a valid website address, such as https://example.com."
+  },
+  "site_address_http_only": {
+    "message": "Website addresses must use http:// or https://."
+  },
+  "site_icon_fallback": {
+    "message": "W"
+  },
+  "site_icon_fetch": {
+    "message": "Fetch Icon"
+  },
+  "site_migration_save_failed": {
+    "message": "Your websites remain on this page, but the migrated data could not be saved. Try again later."
+  },
+  "site_invalid_saved_entries": {
+    "message": "Some saved website entries were invalid and have been ignored."
+  },
+  "site_read_extension_failed": {
+    "message": "Saved websites could not be read. Reload the extension and try again."
+  },
+  "site_read_reload_failed": {
+    "message": "Saved websites could not be read. Reload the page and try again."
+  },
+  "site_arrange_failed": {
+    "message": "Websites could not be arranged. Reload the page and try again."
+  },
+  "site_overflow_capacity": {
+    "message": "This Group already has more Websites than the grid can fit. Delete a Website or reduce an Icon size first."
+  },
+  "site_capacity_full": {
+    "message": "All 60 base cells in this Group are full. Delete a Website or reduce an Icon size first."
+  },
+  "site_grid_layout_failed": {
+    "message": "The grid could not be arranged. Your Websites are preserved; reload the page later."
+  },
+  "site_grid_save_failed": {
+    "message": "Grid positions could not be saved. Try again later."
+  },
+  "site_read_retry_failed": {
+    "message": "Saved Websites could not be read. Try again later."
+  },
+  "site_edit": {
+    "message": "Edit Website"
+  },
+  "site_add": {
+    "message": "Add Website"
+  },
+  "site_delete_confirm": {
+    "message": "Delete the shortcut to “{name}”?"
+  },
+  "site_delete_read_failed": {
+    "message": "Saved Websites could not be read. Nothing has been deleted."
+  },
+  "site_delete_save_failed": {
+    "message": "Changes could not be saved. Nothing has been deleted. Try again later."
+  },
+  "site_deleted": {
+    "message": "Website shortcut deleted."
+  },
+  "site_resize_read_failed": {
+    "message": "Saved Websites could not be read. The original size is preserved."
+  },
+  "site_resize_no_space": {
+    "message": "This Group has insufficient space. The original Icon size is preserved. Delete a Website or reduce an Icon size first."
+  },
+  "site_resize_failed": {
+    "message": "The Icon could not be resized. The original size is preserved."
+  },
+  "site_resize_save_failed": {
+    "message": "The Icon size could not be saved. The original size is preserved. Try again later."
+  },
+  "site_overflow_count": {
+    "message": "Other Websites ({count})"
+  },
+  "site_edit_action": {
+    "message": "Edit"
+  },
+  "site_edit_named": {
+    "message": "Edit {name}"
+  },
+  "site_delete_action": {
+    "message": "Delete"
+  },
+  "site_delete_named": {
+    "message": "Delete {name}"
+  },
+  "site_rearrange_save_failed": {
+    "message": "Your Websites are preserved, but their rearranged positions could not be saved."
+  },
+  "site_grid_overflow_failed": {
+    "message": "The grid could not be arranged. You can still manage your Websites in “Other Websites”."
+  },
+  "site_icon_fetch_unavailable": {
+    "message": "Icon retrieval is unavailable. Try again later or upload an image."
+  },
+  "site_icon_fetching": {
+    "message": "Getting Icon…"
+  },
+  "site_icon_fetch_invalid": {
+    "message": "A valid Website Icon could not be retrieved. Try uploading an image."
+  },
+  "site_icon_fetch_failed": {
+    "message": "The Website Icon could not be retrieved. Try again later."
+  },
+  "site_name_invalid": {
+    "message": "Enter a Website name of 1 to 50 characters."
+  },
+  "site_deleted_elsewhere": {
+    "message": "This Website has been deleted. Cancel and add it again."
+  },
+  "site_save_failed": {
+    "message": "The Website could not be saved. Try again later."
+  },
+  "site_saved": {
+    "message": "Website changes saved."
+  },
+  "site_added": {
+    "message": "Website shortcut added."
+  },
+  "site_move_read_failed": {
+    "message": "Saved Websites could not be read. The original position is preserved."
+  },
+  "site_move_failed": {
+    "message": "This item could not be moved. Try again later."
+  },
+  "site_move_overflow": {
+    "message": "This Website is already in Other Websites. The original position is preserved."
+  },
+  "site_move_group_full": {
+    "message": "The destination Group has insufficient space. The Website remains in its original Group."
+  },
+  "site_move_no_space": {
+    "message": "The current Icon does not fit in that position. The original position is preserved."
+  },
+  "site_move_save_failed": {
+    "message": "The move could not be saved. The original position has been restored."
+  },
+  "site_move_saved": {
+    "message": "New position saved."
+  },
+  "site_named_group": {
+    "message": "“{name}”"
+  },
+  "site_remaining_group": {
+    "message": "the remaining Group"
+  },
+  "site_group_deleted_save_failed": {
+    "message": "The Group was deleted and its Websites are preserved in {name}, but their Group assignments could not be saved. Try again later."
+  },
+  "site_group_deleted_moved": {
+    "message": "The Group was deleted and its Websites were moved to {name}."
+  },
+  "group_default_name": {
+    "message": "Favorites"
+  },
+  "group_migration_save_failed": {
+    "message": "Your Groups are displayed, but their updated Settings could not be saved. Try again later."
+  },
+  "group_read_failed_preserved": {
+    "message": "Website Groups could not be read. Reload the page and try again. Your Website data will not be deleted."
+  },
+  "group_icon_fallback": {
+    "message": "G"
+  },
+  "group_deleted_other_tab": {
+    "message": "This Group was deleted in another tab. Cancel and try again."
+  },
+  "group_last_cannot_delete": {
+    "message": "At least one Group is required. This Group cannot be deleted."
+  },
+  "group_delete_help": {
+    "message": "Deleting this Group will move its Websites to “{name}”. No content will be deleted."
+  },
+  "group_selection_save_failed": {
+    "message": "The Group selection could not be saved. Try again later."
+  },
+  "group_settings_named": {
+    "message": "Settings for Group {name}"
+  },
+  "group_deleted_select_another": {
+    "message": "This Group has been deleted. Select another Group."
+  },
+  "group_settings": {
+    "message": "Group Settings"
+  },
+  "group_add": {
+    "message": "Add Group"
+  },
+  "group_save_action": {
+    "message": "Save"
+  },
+  "group_add_action": {
+    "message": "Add"
+  },
+  "group_delete_unavailable": {
+    "message": "This Group cannot be deleted right now. Cancel and try again."
+  },
+  "group_delete_confirm": {
+    "message": "Delete Group “{name}”? Its Websites will be preserved and moved to “{destination}”."
+  },
+  "group_last_recheck": {
+    "message": "At least one Group is required. Deletion is unavailable; check your Groups again."
+  },
+  "group_delete_failed": {
+    "message": "The Group could not be deleted. Your Websites and Groups are preserved. Try again later."
+  },
+  "group_name_invalid": {
+    "message": "Enter a Group name of 1 to 20 characters."
+  },
+  "group_symbol_too_long": {
+    "message": "A text Icon can have up to 8 characters."
+  },
+  "group_read_failed": {
+    "message": "Groups could not be read. Reload the page and try again."
+  },
+  "group_deleted_readd": {
+    "message": "This Group has been deleted. Cancel and add it again."
+  },
+  "group_name_duplicate": {
+    "message": "A Group with this name already exists. Use a different name."
+  },
+  "group_save_failed": {
+    "message": "The Group could not be saved. Try again later."
+  },
+  "sidebar_expand": {
+    "message": "Expand Group Sidebar"
+  },
+  "sidebar_collapse": {
+    "message": "Collapse Group Sidebar"
+  },
+  "menu_website_named": {
+    "message": "Website menu for {name}"
+  },
+  "menu_open_named": {
+    "message": "Open {name}"
+  },
+  "menu_edit_named": {
+    "message": "Edit {name}"
+  },
+  "menu_delete_named": {
+    "message": "Delete {name}"
+  },
+  "ui_new_tab": {
+    "message": "New Tab"
+  },
+  "ui_group_sidebar_label": {
+    "message": "Website group sidebar"
+  },
+  "ui_groups": {
+    "message": "Groups"
+  },
+  "ui_collapse_groups": {
+    "message": "Collapse group sidebar"
+  },
+  "ui_switch_groups": {
+    "message": "Switch website groups"
+  },
+  "ui_add_group": {
+    "message": "Add Group"
+  },
+  "ui_settings": {
+    "message": "Settings"
+  },
+  "ui_time_date": {
+    "message": "Time and date"
+  },
+  "ui_loading_date": {
+    "message": "Loading date…"
+  },
+  "ui_frequent_websites": {
+    "message": "Frequent Websites"
+  },
+  "ui_empty_group": {
+    "message": "This group has no websites yet. Right-click an empty area to add your frequent websites."
+  },
+  "ui_other_websites": {
+    "message": "Other Websites"
+  },
+  "ui_close": {
+    "message": "Close"
+  },
+  "ui_overflow_help": {
+    "message": "Websites beyond the grid capacity are kept here and have not been deleted. You can open, edit, or delete them here."
+  },
+  "ui_background_menu": {
+    "message": "Background menu"
+  },
+  "ui_add_icon": {
+    "message": "Add Icon"
+  },
+  "ui_change_wallpaper": {
+    "message": "Change Wallpaper"
+  },
+  "ui_website_menu": {
+    "message": "Website menu"
+  },
+  "ui_website_actions_size": {
+    "message": "Website actions and icon size"
+  },
+  "ui_open": {
+    "message": "Open"
+  },
+  "ui_edit": {
+    "message": "Edit"
+  },
+  "ui_size_normal": {
+    "message": "Normal"
+  },
+  "ui_size_wide": {
+    "message": "Wide Icon"
+  },
+  "ui_size_tall": {
+    "message": "Tall Icon"
+  },
+  "ui_size_large": {
+    "message": "Large Icon"
+  },
+  "ui_delete": {
+    "message": "Delete"
+  },
+  "ui_add_website": {
+    "message": "Add Website"
+  },
+  "ui_website_name": {
+    "message": "Website name"
+  },
+  "ui_website_address": {
+    "message": "Website address"
+  },
+  "ui_website_address_help": {
+    "message": "Supports http:// and https://. If the protocol is omitted, https:// is used."
+  },
+  "ui_website_icon": {
+    "message": "Website icon"
+  },
+  "ui_fetch_icon": {
+    "message": "Fetch Icon"
+  },
+  "ui_default_icon": {
+    "message": "Use Default Icon"
+  },
+  "ui_website_icon_help": {
+    "message": "Fetch an icon from the entered address or upload an image (up to 2 MiB). Firefox may request permission to access the website when fetching. Changes take effect after saving."
+  },
+  "ui_cancel": {
+    "message": "Cancel"
+  },
+  "ui_save": {
+    "message": "Save"
+  },
+  "ui_group_name": {
+    "message": "Group name"
+  },
+  "ui_group_icon": {
+    "message": "Group icon"
+  },
+  "ui_group_symbol_placeholder": {
+    "message": "e.g. 📁, ⭐"
+  },
+  "ui_text_icon": {
+    "message": "Use Text Icon"
+  },
+  "ui_upload_group_icon": {
+    "message": "Upload group icon"
+  },
+  "ui_group_icon_help": {
+    "message": "Enter an emoji or text, or upload a local image up to 2 MiB."
+  },
+  "ui_delete_group": {
+    "message": "Delete Group"
+  },
+  "ui_add": {
+    "message": "Add"
+  },
+  "ui_personalization": {
+    "message": "Personalization"
+  },
+  "ui_close_settings": {
+    "message": "Close settings"
+  },
+  "ui_background": {
+    "message": "Background"
+  },
+  "ui_preset_wallpapers": {
+    "message": "Preset Wallpapers"
+  },
+  "ui_click_to_switch": {
+    "message": "Click to switch"
+  },
+  "ui_common_background_colors": {
+    "message": "Common Background Colors"
+  },
+  "ui_background_image": {
+    "message": "Background image"
+  },
+  "ui_background_image_help": {
+    "message": "Applied automatically after selection, up to 10 MiB. Stored only in this browser."
+  },
+  "ui_reset_background": {
+    "message": "Restore Default Background"
+  },
+  "ui_appearance": {
+    "message": "Appearance"
+  },
+  "ui_theme": {
+    "message": "Theme"
+  },
+  "ui_dark": {
+    "message": "Dark"
+  },
+  "ui_light": {
+    "message": "Light"
+  },
+  "ui_follow_system": {
+    "message": "Follow system"
+  },
+  "ui_show_clock": {
+    "message": "Show clock"
+  },
+  "ui_wallpaper_processing": {
+    "message": "Please wait for background processing to finish before choosing a wallpaper."
+  },
+  "ui_group_full": {
+    "message": "This group's {count} base cells are full. Free up space first."
+  },
+  "ui_add_website_icon": {
+    "message": "Add website icon"
+  },
+  "image_invalid_size": {
+    "message": "Choose a valid image no larger than 2 MiB."
+  },
+  "image_unsupported_type": {
+    "message": "Choose a PNG, JPEG, WebP, GIF, AVIF or ICO image."
+  },
+  "image_create_failed": {
+    "message": "An icon could not be created from this image. Choose another image."
+  },
+  "fetch_resource_too_large": {
+    "message": "The icon resource exceeds the size limit."
+  },
+  "fetch_empty_content": {
+    "message": "The website returned empty content."
+  },
+  "fetch_aborted": {
+    "message": "The icon request was cancelled."
+  },
+  "fetch_unavailable": {
+    "message": "The website cannot provide an icon right now."
+  },
+  "fetch_unsupported_url": {
+    "message": "The website returned an unsupported address."
+  },
+  "fetch_invalid_website_url": {
+    "message": "Enter a valid HTTP or HTTPS website address first."
+  },
+  "fetch_permission_unavailable": {
+    "message": "The browser cannot request website access right now. Upload a local icon."
+  },
+  "fetch_permission_failed": {
+    "message": "Website access could not be requested. Try again or upload a local icon."
+  },
+  "fetch_permission_denied": {
+    "message": "The icon cannot be fetched without permission to access this website. You can still upload a local icon."
+  },
+  "fetch_timeout": {
+    "message": "Fetching the icon timed out."
+  },
+  "fetch_timeout_retry": {
+    "message": "Fetching the icon timed out. Try again later or upload a local icon."
+  },
+  "fetch_no_icon": {
+    "message": "No usable icon could be fetched. Check the address, try again later or upload a local image."
+  },
+  "layout_grid_full": {
+    "message": "There is not enough room in this group's 10×6 grid."
+  },
+  "layout_mobile_failed": {
+    "message": "Icons cannot be arranged for mobile right now."
+  },
+  "grid_drop_no_space": {
+    "message": "There is not enough room at the destination. The original position has been kept."
+  },
+  "extension_name": {
+    "message": "Simple New Tab"
+  },
+  "extension_description": {
+    "message": "A simple Firefox new tab with a local clock, custom backgrounds, and shortcuts to frequent websites."
+  },
+  "background_storage_access_error": {
+    "message": "Local background storage is temporarily unavailable. Please try again later."
+  },
+  "background_storage_blocked_error": {
+    "message": "Background storage is in use by another page. Close older tabs and try again."
+  },
+  "background_storage_save_error": {
+    "message": "The background settings could not be saved locally. Please try again later."
+  },
+  "background_image_format_error": {
+    "message": "Please choose a PNG, JPEG, WebP, GIF, or AVIF image."
+  },
+  "background_empty_image_error": {
+    "message": "This image is an empty file. Please choose another image."
+  },
+  "background_image_size_error": {
+    "message": "The image must be no larger than 10 MiB. Please choose a smaller image."
+  },
+  "background_image_decode_error": {
+    "message": "This image could not be opened. Please choose another image."
+  },
+  "background_preset_unavailable": {
+    "message": "This preset wallpaper is unavailable. Please choose another one."
+  },
+  "background_update_error": {
+    "message": "The background could not be updated at the moment. Please try again later."
+  },
+  "background_saving_color": {
+    "message": "Saving solid-color background…"
+  },
+  "background_saved_color": {
+    "message": "Solid-color background applied and saved."
+  },
+  "background_wallpaper_label": {
+    "message": "Select background image, item {index}"
+  },
+  "background_saving_wallpaper": {
+    "message": "Saving wallpaper…"
+  },
+  "background_saved_wallpaper": {
+    "message": "Wallpaper applied and saved."
+  },
+  "background_saving_image": {
+    "message": "Reading and saving background image…"
+  },
+  "background_saved_image": {
+    "message": "Background image applied and saved."
+  },
+  "background_restoring": {
+    "message": "Restoring default background…"
+  },
+  "background_restored": {
+    "message": "Default background restored."
+  },
+  "background_saved_invalid": {
+    "message": "The saved background settings are invalid."
+  },
+  "background_load_error": {
+    "message": "The saved background could not be read at the moment, so the default background is being used. You can set a background again or restore the default."
+  },
+  "color_snow_white": {
+    "message": "Snow white"
+  },
+  "color_ivory": {
+    "message": "Ivory"
+  },
+  "color_fog_gray": {
+    "message": "Fog gray"
+  },
+  "color_silver_gray": {
+    "message": "Silver gray"
+  },
+  "color_limestone_gray": {
+    "message": "Limestone gray"
+  },
+  "color_slate_gray": {
+    "message": "Slate gray"
+  },
+  "color_charcoal_gray": {
+    "message": "Charcoal gray"
+  },
+  "color_ink_black": {
+    "message": "Ink black"
+  },
+  "color_cherry_red": {
+    "message": "Cherry red"
+  },
+  "color_coral_red": {
+    "message": "Coral red"
+  },
+  "color_rose_red": {
+    "message": "Rose red"
+  },
+  "color_orange_red": {
+    "message": "Orange red"
+  },
+  "color_apricot": {
+    "message": "Apricot"
+  },
+  "color_amber": {
+    "message": "Amber"
+  },
+  "color_golden_yellow": {
+    "message": "Golden yellow"
+  },
+  "color_warm_brown": {
+    "message": "Warm brown"
+  },
+  "color_terracotta": {
+    "message": "Terracotta"
+  },
+  "color_cinnamon": {
+    "message": "Cinnamon"
+  },
+  "color_grass_green": {
+    "message": "Grass green"
+  },
+  "color_leaf_green": {
+    "message": "Leaf green"
+  },
+  "color_emerald": {
+    "message": "Emerald"
+  },
+  "color_teal": {
+    "message": "Teal"
+  },
+  "color_lake_cyan": {
+    "message": "Lake cyan"
+  },
+  "color_sky_blue": {
+    "message": "Sky blue"
+  },
+  "color_azure_blue": {
+    "message": "Azure blue"
+  },
+  "color_indigo": {
+    "message": "Indigo"
+  },
+  "color_violet": {
+    "message": "Violet"
+  },
+  "color_orchid_purple": {
+    "message": "Orchid purple"
+  },
+  "color_magenta": {
+    "message": "Magenta"
+  },
+  "color_berry_purple": {
+    "message": "Berry purple"
+  },
+  "color_cream": {
+    "message": "Cream"
+  },
+  "color_peach": {
+    "message": "Peach"
+  },
+  "color_light_coral": {
+    "message": "Light coral"
+  },
+  "color_pale_pink": {
+    "message": "Pale pink"
+  },
+  "color_pale_purple": {
+    "message": "Pale purple"
+  },
+  "color_lavender": {
+    "message": "Lavender"
+  },
+  "color_ice_blue": {
+    "message": "Ice blue"
+  },
+  "color_light_cyan": {
+    "message": "Light cyan"
+  },
+  "color_mint": {
+    "message": "Mint"
+  },
+  "color_light_green": {
+    "message": "Light green"
+  },
+  "color_deep_sea_blue": {
+    "message": "Deep sea blue"
+  },
+  "color_midnight_blue": {
+    "message": "Midnight blue"
+  },
+  "color_dark_indigo": {
+    "message": "Dark indigo"
+  },
+  "color_dark_purple": {
+    "message": "Dark purple"
+  },
+  "color_forest_green": {
+    "message": "Forest green"
+  },
+  "color_dark_teal": {
+    "message": "Dark teal"
+  },
+  "color_wine_red": {
+    "message": "Wine red"
+  },
+  "color_espresso": {
+    "message": "Espresso"
+  }
+}

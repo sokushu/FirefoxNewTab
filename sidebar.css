@@ -1,0 +1,577 @@
+:root {
+  --group-panel-glass: rgb(250 252 255 / 58%);
+  --group-item-glass: rgb(255 255 255 / 10%);
+  --group-hover-glass: rgb(255 255 255 / 28%);
+  --group-active-glass: rgb(226 237 255 / 44%);
+  --group-symbol-glass: rgb(255 255 255 / 34%);
+  --group-panel-border: rgb(255 255 255 / 35%);
+  --group-control-border: rgb(140 157 182 / 25%);
+  --group-emphasis: #254c9d;
+  --group-danger-glass: rgb(180 35 24 / 8%);
+}
+
+.group-sidebar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  padding: 24px 16px 16px;
+  border-inline-end: 1px solid var(--group-panel-border);
+  background: var(--group-panel-glass);
+  backdrop-filter: blur(22px) saturate(1.12);
+  color: var(--text);
+  box-shadow: 6px 0 28px rgb(0 0 0 / 6%);
+}
+
+.group-sidebar-heading {
+  display: flex;
+  flex-shrink: 0;
+  gap: 10px;
+  align-items: center;
+  min-width: 0;
+  padding: 4px 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.group-sidebar-heading svg,
+.group-add svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.group-sidebar-heading > span {
+  flex: 1;
+  min-width: 0;
+}
+
+.group-sidebar-heading > svg,
+.group-sidebar-heading > span,
+.group-add > span,
+.shortcut-group-name {
+  max-width: 12rem;
+  max-height: 3rem;
+  overflow: hidden;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.group-add > span {
+  min-width: 0;
+  max-width: 100%;
+  max-height: 4.5rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.group-sidebar-toggle {
+  display: grid;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  margin-inline-start: auto;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--group-control-border);
+  border-radius: 8px;
+  background: var(--group-item-glass);
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.group-sidebar-toggle:hover {
+  background: var(--group-hover-glass);
+  color: var(--group-emphasis);
+}
+
+.group-sidebar-toggle-icon {
+  transform-origin: center;
+}
+
+.group-sidebar-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  margin-inline: -4px;
+  padding: 4px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.shortcut-groups {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shortcut-group-item {
+  position: relative;
+  min-width: 0;
+}
+
+.shortcut-group-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid var(--group-control-border);
+  border-radius: 12px;
+  background: var(--group-item-glass);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: left;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.shortcut-group-button:hover {
+  background: var(--group-hover-glass);
+}
+
+.shortcut-group-button[aria-current="page"] {
+  border-color: var(--group-control-border);
+  background: var(--group-active-glass);
+  color: var(--group-emphasis);
+  box-shadow: inset 3px 0 var(--accent);
+  font-weight: 600;
+}
+
+.shortcut-group-symbol {
+  display: grid;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--group-symbol-glass);
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.shortcut-group-button[aria-current="page"] .shortcut-group-symbol {
+  color: var(--group-emphasis);
+}
+
+.shortcut-group-symbol img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.shortcut-group-name {
+  min-width: 0;
+  text-overflow: ellipsis;
+}
+
+.shortcut-group-settings {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 17px;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 140ms ease, background-color 140ms ease, color 140ms ease;
+}
+
+.shortcut-group-item:hover .shortcut-group-settings,
+.shortcut-group-item:focus-within .shortcut-group-settings {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.shortcut-group-settings:hover {
+  background: var(--group-hover-glass);
+  color: var(--group-emphasis);
+}
+
+.shortcut-group-settings svg {
+  width: 15px;
+  height: 15px;
+  pointer-events: none;
+}
+
+.group-add {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 8px;
+  border: 1px dashed var(--group-control-border);
+  border-radius: 12px;
+  background: var(--group-item-glass);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.group-add:hover {
+  border-color: var(--accent);
+  background: var(--group-hover-glass);
+  color: var(--group-emphasis);
+}
+
+.shortcut-group-button:focus-visible,
+.shortcut-group-settings:focus-visible,
+.group-sidebar-toggle:focus-visible,
+.group-add:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.group-icon-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  min-width: 0;
+}
+
+#shortcut-group-icon-preview {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+#shortcut-group-symbol {
+  min-width: 0;
+  max-width: 100%;
+  font-size: 1.125rem;
+}
+
+#delete-shortcut-group {
+  border-color: var(--danger);
+  background: transparent;
+  color: var(--danger);
+}
+
+#delete-shortcut-group:not(:disabled):hover {
+  background: var(--group-danger-glass);
+}
+
+#shortcut-group-delete-help {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+#delete-shortcut-group:disabled,
+#save-shortcut-group:disabled,
+#shortcut-group-symbol:disabled,
+.group-icon-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+#delete-shortcut-group:disabled {
+  border-color: var(--border);
+  background: transparent;
+  color: var(--muted);
+}
+
+.group-dialog input[type="file"] {
+  width: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.group-dialog input[type="file"]::file-selector-button {
+  margin-inline-end: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--background);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+}
+
+.group-dialog input[type="file"]::file-selector-button:hover {
+  background: var(--glow);
+}
+
+@media (max-width: 56rem) {
+  :root {
+    --sidebar-width: 104px;
+  }
+
+  .group-sidebar {
+    gap: 12px;
+    padding: 20px 10px 12px;
+  }
+
+  .group-sidebar-heading,
+  .group-add {
+    flex-direction: column;
+    gap: 6px;
+    padding-inline: 4px;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .group-sidebar-heading {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-items: center;
+  }
+
+  .group-sidebar-heading > span {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .group-sidebar-toggle {
+    margin-inline-start: 0;
+  }
+
+  .shortcut-group-button {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 24px;
+    gap: 5px 0;
+    justify-items: center;
+    padding: 9px 5px;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .shortcut-group-name {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    max-width: 100%;
+  }
+
+  .shortcut-group-button > .shortcut-group-symbol {
+    grid-column: 1;
+    grid-row: 1;
+    width: 24px;
+    height: 24px;
+  }
+
+  .shortcut-group-settings {
+    top: 10px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    transform: none;
+  }
+}
+
+@media (max-width: 36rem) {
+  :root {
+    --sidebar-width: 80px;
+  }
+
+  .group-sidebar {
+    padding-inline: 6px;
+  }
+}
+
+:root.groups-collapsed {
+  --sidebar-width: 72px;
+}
+
+.groups-collapsed .group-sidebar {
+  padding: 20px 8px 12px;
+}
+
+.groups-collapsed .group-sidebar-heading {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+}
+
+.groups-collapsed .group-sidebar-heading > svg,
+.groups-collapsed .group-sidebar-heading > span,
+.groups-collapsed .shortcut-group-name,
+.groups-collapsed .group-add > span {
+  max-width: 0;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.groups-collapsed .group-sidebar-toggle {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+
+.groups-collapsed .group-sidebar-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.groups-collapsed .shortcut-group-button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0;
+  min-height: 48px;
+  padding: 9px max(0px, calc((100% - 30px) / 2));
+}
+
+.groups-collapsed .shortcut-group-button > .shortcut-group-symbol {
+  width: 28px;
+  height: 28px;
+}
+
+.groups-collapsed .shortcut-group-settings {
+  top: -2px;
+  right: -2px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--group-control-border);
+  border-radius: 7px;
+  background: var(--group-panel-glass);
+  font-size: 15px;
+  transform: none;
+}
+
+.groups-collapsed .group-add {
+  gap: 0;
+  min-height: 44px;
+  padding: 10px 6px;
+}
+
+.groups-resizing .group-sidebar,
+.groups-resizing .group-sidebar-heading,
+.groups-resizing .shortcut-group-button,
+.groups-resizing .group-add {
+  transition: padding 220ms ease, gap 220ms ease, background-color 160ms ease;
+}
+
+.groups-resizing .group-sidebar-heading > svg,
+.groups-resizing .group-sidebar-heading > span,
+.groups-resizing .shortcut-group-name,
+.groups-resizing .group-add > span {
+  transition: max-width 220ms ease, max-height 220ms ease, opacity 150ms ease;
+}
+
+.groups-resizing .shortcut-group-symbol {
+  transition: width 220ms ease, height 220ms ease, border-radius 220ms ease;
+}
+
+.groups-resizing .group-sidebar-toggle {
+  transition: width 220ms ease, height 220ms ease, background-color 150ms ease;
+}
+
+.groups-resizing .group-sidebar-toggle-icon {
+  transition: transform 220ms ease;
+}
+
+.groups-resizing .shortcut-group-settings {
+  transition: top 220ms ease, right 220ms ease, width 220ms ease, height 220ms ease, transform 220ms ease, opacity 140ms ease;
+}
+
+@media (max-width: 36rem) {
+  :root.groups-collapsed {
+    --sidebar-width: 64px;
+  }
+
+  .groups-collapsed .group-sidebar {
+    padding-inline: 6px;
+  }
+}
+
+@media (hover: none), (any-pointer: coarse) {
+  .shortcut-group-settings {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .group-sidebar,
+  .group-sidebar-heading,
+  .group-sidebar-heading > svg,
+  .group-sidebar-heading > span,
+  .shortcut-group-name,
+  .shortcut-group-symbol,
+  .group-add > span,
+  .shortcut-group-button,
+  .shortcut-group-settings,
+  .group-sidebar-toggle,
+  .group-sidebar-toggle-icon,
+  .group-add {
+    transition: none !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --group-panel-glass: rgb(16 23 37 / 58%);
+    --group-item-glass: rgb(255 255 255 / 2%);
+    --group-hover-glass: rgb(146 169 211 / 12%);
+    --group-active-glass: rgb(126 161 230 / 16%);
+    --group-symbol-glass: rgb(255 255 255 / 8%);
+    --group-panel-border: rgb(214 226 255 / 13%);
+    --group-control-border: rgb(214 226 255 / 16%);
+    --group-emphasis: #d2e0ff;
+    --group-danger-glass: rgb(255 175 166 / 10%);
+  }
+}
+
+:root[data-theme="dark"] {
+  --group-panel-glass: rgb(16 23 37 / 58%);
+  --group-item-glass: rgb(255 255 255 / 2%);
+  --group-hover-glass: rgb(146 169 211 / 12%);
+  --group-active-glass: rgb(126 161 230 / 16%);
+  --group-symbol-glass: rgb(255 255 255 / 8%);
+  --group-panel-border: rgb(214 226 255 / 13%);
+  --group-control-border: rgb(214 226 255 / 16%);
+  --group-emphasis: #d2e0ff;
+  --group-danger-glass: rgb(255 175 166 / 10%);
+}
